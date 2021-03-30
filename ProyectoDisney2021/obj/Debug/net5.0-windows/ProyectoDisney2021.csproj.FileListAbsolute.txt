@@ -35,3 +35,6 @@ C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debu
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.pdb
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.genruntimeconfig.cache
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Properties.Resources.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Properties.Resources.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Login.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.datos_Usuario.resources
