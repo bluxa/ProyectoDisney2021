@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProyectoDisney2021.Presentacion;
 
 namespace ProyectoDisney2021
 {
@@ -17,7 +18,7 @@ namespace ProyectoDisney2021
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Pagina_principal());
         }
     }
 }

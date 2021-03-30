@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoDisney2021
+namespace ProyectoDisney2021.Presentacion
 {
-    public partial class Form1 : Form
+    public partial class Pagina_principal : Form
     {
-        public Form1()
+        public Pagina_principal()
         {
             InitializeComponent();
         }
-
     }
 }

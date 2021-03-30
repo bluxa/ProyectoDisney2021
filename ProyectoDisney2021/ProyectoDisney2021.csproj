@@ -6,4 +6,11 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Estrutura_datos\Lista_doble\" />
+    <Folder Include="Estrutura_datos\Cola\" />
+    <Folder Include="Estrutura_datos\Lista_simple\" />
+    <Folder Include="Estrutura_datos\Pila\" />
+  </ItemGroup>
+
 </Project>
