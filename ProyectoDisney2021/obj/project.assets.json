@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\bluxa\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj",
       "projectName": "ProyectoDisney2021",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj",
+      "projectPath": "C:\\Users\\Admin\\Source\\Repos\\bluxa\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\ProyectoDisney2021\\ProyectoDisney2021\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Source\\Repos\\bluxa\\ProyectoDisney2021\\ProyectoDisney2021\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
