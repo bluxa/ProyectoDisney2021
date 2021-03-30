@@ -368,7 +368,7 @@ namespace ProyectoDisney2021.Presentacion
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnLogin.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLogin.Image = ((System.Drawing.Image)(resources.GetObject("btnLogin.Image")));
@@ -386,7 +386,7 @@ namespace ProyectoDisney2021.Presentacion
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1387, 749);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox12);
