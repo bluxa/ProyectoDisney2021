@@ -24,9 +24,17 @@ namespace ProyectoDisney2021.Presentacion
 
         private void Pagina_principal_Load(object sender, EventArgs e)
         {
+            label1.Enabled = false;
+            pictureBox2.Parent = pictureBox1;
+            label2.Parent = pictureBox1;
             label3.Parent = pictureBox1;
+            label4.Parent = pictureBox1;
             label5.Parent = pictureBox1;
+            label6.Parent = pictureBox1;
+            pictureBox3.Parent = pictureBox1;
 
+            //label11.Parent = pictureBox14;
+            //label12.Parent = pictureBox14;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -48,6 +56,31 @@ namespace ProyectoDisney2021.Presentacion
         {
             new Login().Show();
             this.Hide();
+        }
+
+        private void pictureBox26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
