@@ -13,7 +13,8 @@ namespace ProyectoDisney2021.Estrutura_datos
         string correoUsuario { get; set; }
         string contraseñaUsuario { get; set; }
         string nombreCompleto { get; set; }
-
+        string tipoUsuario { get; set; }
+        //Agregar al constructu
 
         //Constructor vacio
         public Cls_Usuario() { }
