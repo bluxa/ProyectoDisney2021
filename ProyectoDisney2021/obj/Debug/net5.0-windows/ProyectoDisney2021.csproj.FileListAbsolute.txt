@@ -41,3 +41,4 @@ C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.datos_Usuario.resources
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Login.resources
 C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Presentacion_contenido.resources
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Presentacion_contenido.resources
