@@ -26,7 +26,7 @@ namespace ProyectoDisney2021.Presentacion
         {
             if (txtGmail.Text == "" && txtPassword.Text == "")
             {
-                new datos_Usuario().Show();
+                new Presentacion_contenido().Show();
                 this.Hide();
             }
             else
@@ -54,6 +54,17 @@ namespace ProyectoDisney2021.Presentacion
             {
                 txtPassword.PasswordChar = '*';
             }
+        }
+
+        private void txtGmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDato_Click(object sender, EventArgs e)
+        {
+            new datos_Usuario().Show();
+            this.Hide();
         }
     }
 }

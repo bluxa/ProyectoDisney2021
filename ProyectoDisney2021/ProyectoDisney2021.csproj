@@ -7,13 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Estrutura_datos\Lista_doble\" />
-    <Folder Include="Estrutura_datos\Cola\" />
-    <Folder Include="Estrutura_datos\Lista_simple\" />
-    <Folder Include="Estrutura_datos\Pila\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
