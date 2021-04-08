@@ -74,9 +74,9 @@ namespace ProyectoDisney2021.Presentacion
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
+            this.txtPassword.PlaceholderText = "Contraseña";
             this.txtPassword.Size = new System.Drawing.Size(374, 49);
             this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "Contraseña";
             // 
             // txtGmail
             // 
@@ -88,9 +88,9 @@ namespace ProyectoDisney2021.Presentacion
             this.txtGmail.MaxLength = 32765;
             this.txtGmail.Multiline = true;
             this.txtGmail.Name = "txtGmail";
+            this.txtGmail.PlaceholderText = "Correo electrónico";
             this.txtGmail.Size = new System.Drawing.Size(374, 49);
             this.txtGmail.TabIndex = 4;
-            this.txtGmail.Text = "Correo electrónico";
             this.txtGmail.TextChanged += new System.EventHandler(this.txtGmail_TextChanged);
             // 
             // btnIngresar
@@ -155,7 +155,7 @@ namespace ProyectoDisney2021.Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ClientSize = new System.Drawing.Size(907, 620);
+            this.ClientSize = new System.Drawing.Size(924, 637);
             this.Controls.Add(this.btnDato);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chBoxVisib);

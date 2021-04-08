@@ -181,7 +181,7 @@ namespace ProyectoDisney2021.Presentacion
             this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1273, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(1266, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(89, 86);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -221,6 +221,7 @@ namespace ProyectoDisney2021.Presentacion
             this.pictureDisney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureDisney.TabIndex = 10;
             this.pictureDisney.TabStop = false;
+            this.pictureDisney.Click += new System.EventHandler(this.pictureDisney_Click);
             this.pictureDisney.MouseLeave += new System.EventHandler(this.pictureDisney_MouseLeave);
             this.pictureDisney.MouseHover += new System.EventHandler(this.pictureDisney_MouseHover);
             // 
@@ -330,6 +331,7 @@ namespace ProyectoDisney2021.Presentacion
             this.pictureBox7.Location = new System.Drawing.Point(89, 655);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(214, 117);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 16;
             this.pictureBox7.TabStop = false;
             // 
@@ -402,7 +404,7 @@ namespace ProyectoDisney2021.Presentacion
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1140, 766);
+            this.ClientSize = new System.Drawing.Size(1191, 766);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox9);

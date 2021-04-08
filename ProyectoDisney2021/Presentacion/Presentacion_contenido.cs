@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Resources;
+using System.IO;
+using ProyectoDisney2021.Data_movies;
 
 namespace ProyectoDisney2021.Presentacion
 {
     public partial class Presentacion_contenido : Form
     {
+        ClsPelicula[] auxPeliculaTxt;
         public Presentacion_contenido()
         {
             InitializeComponent();
@@ -112,5 +115,57 @@ namespace ProyectoDisney2021.Presentacion
         {
             pictureNational.Image = global::ProyectoDisney2021.Properties.Resources.BNational;
         }
+
+        private void pictureDisney_Click(object sender, EventArgs e)
+        {
+            cargarPeliculasTxt(ref auxPeliculaTxt, "Disney");
+
+            pictureBox7.WaitOnLoad = false;
+            pictureBox6.WaitOnLoad = false;
+            for (int index = 0; index < auxPeliculaTxt.Length; index++)
+            {
+                if (index == 0)
+                {
+                    pictureBox7.LoadAsync(@"" + auxPeliculaTxt[index].imgPelicula.ToString());
+
+                    //string html = "<html><head>";
+                    //html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+                    //html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='300' height='300' frameborder='0' allowfullscreen></iframe>";
+                    //html += "</body></html>";
+                    //this.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[index].trailerPelicula);
+
+                }
+                else
+                {
+                    pictureBox6.LoadAsync(@"" + auxPeliculaTxt[index].imgPelicula.ToString());
+                    //string html = "<html><head>";
+                    //html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+                    //html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='300' height='250' frameborder='0' allowfullscreen></iframe>";
+                    //html += "</body></html>";
+                    //this.webBrowser2.DocumentText = string.Format(html, auxPeliculaTxt[index].trailerPelicula);
+                }
+
+            }
+        }
+
+        public static void cargarPeliculasTxt(ref ClsPelicula[] auxPeliculaTxt, string nomCategoria)
+        {
+            StreamReader reader = new StreamReader(nomCategoria + ".txt");
+            int size = Convert.ToInt32(reader.ReadLine());
+            auxPeliculaTxt = new ClsPelicula[size];
+
+            for (int index = 0; index < auxPeliculaTxt.Length; index++)
+            {
+                auxPeliculaTxt[index] = new ClsPelicula();
+                auxPeliculaTxt[index].idPelicula = int.Parse(reader.ReadLine());
+                auxPeliculaTxt[index].nombrePelicula = reader.ReadLine();
+                auxPeliculaTxt[index].idCategoria = int.Parse(reader.ReadLine());
+                auxPeliculaTxt[index].imgPelicula = reader.ReadLine();
+                auxPeliculaTxt[index].trailerPelicula = reader.ReadLine();
+            }
+            reader.Close();
+        }
+
+
     }
 }

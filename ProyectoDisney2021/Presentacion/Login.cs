@@ -26,7 +26,11 @@ namespace ProyectoDisney2021.Presentacion
         {
             if (txtGmail.Text == "" && txtPassword.Text == "")
             {
+                
                 new Presentacion_contenido().Show();
+
+                //new Administrador().Show();
+                
                 this.Hide();
             }
             else
