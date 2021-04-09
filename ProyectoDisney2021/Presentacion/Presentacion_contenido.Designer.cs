@@ -206,7 +206,7 @@ namespace ProyectoDisney2021.Presentacion
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(303, 85);
+            this.label1.Location = new System.Drawing.Point(265, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 15);
             this.label1.TabIndex = 9;
@@ -404,7 +404,7 @@ namespace ProyectoDisney2021.Presentacion
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1191, 766);
+            this.ClientSize = new System.Drawing.Size(1208, 766);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox9);

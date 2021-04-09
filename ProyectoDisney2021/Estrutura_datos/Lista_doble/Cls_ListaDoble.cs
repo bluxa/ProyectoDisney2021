@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProyectoDisney2021.Estrutura_datos.Usuario;
+using ProyectoDisney2021.Estrutura_datos.Usuario.Administrador;
 
 namespace ProyectoDisney2021.Estrutura_datos.Lista_doble
 {
   public class Cls_ListaDoble
     {
-        public Cls_NodoDoble inicio, fin;
+        public Cls_NodoDoble inicio, fin, Temp;
 
         public Cls_ListaDoble()
         {
@@ -40,61 +42,112 @@ namespace ProyectoDisney2021.Estrutura_datos.Lista_doble
 
         }
 
-        /*Insertar al inicio de la lista*/
-        public void insertarAlInicio(object n)
+        //Busca el correo y la contraseña del usuario
+        public Cls_NodoDoble buscarUsuario(object codigoUsuario)
         {
-            if (!Listavacia())
+            ComparadorUsuario dato;
+            dato = (ComparadorUsuario)codigoUsuario;
+            return buscarUsuario (dato, inicio);          
+        }
+        protected Cls_NodoDoble buscarUsuario(ComparadorUsuario codigoUsuario, Cls_NodoDoble usuario)
+        {
+            if (usuario == null)
             {
-                inicio = new Cls_NodoDoble(n, inicio, null);
-                inicio.siguienteNodo.anterioNodo = inicio;
+                //throw new Exception("No encontrado el nodo con la clave");
+                return null;
             }
-            /*Esta vacia*/
-
             else
             {
-                inicio = fin = new Cls_NodoDoble(n);
+                if (codigoUsuario.correoIgual(usuario.valorNodo()) && codigoUsuario.contraseñaIgual(usuario.valorNodo()))
+                    return usuario;
+                else
+                    return buscarUsuario(codigoUsuario, usuario.siguienteNodo);
             }
 
         }
+        //Solo busca el correo de la persona
 
-        /*Quita el dato del inicio de la lista doblemente enlazada*/
-        public object QuitarDatoInicio()
+        public Cls_NodoDoble buscarCorreo(object codigoUsuario)
         {
-            object dato = inicio.datoNodo;
+            ComparadorUsuario dato;
+            dato = (ComparadorUsuario)codigoUsuario;
+            return buscarCorreo(dato, inicio);
+            //return buscar(dato, inicio);
+        }
 
-            if (inicio == fin)
+        protected Cls_NodoDoble buscarCorreo(ComparadorUsuario códigoUsuario, Cls_NodoDoble usuario)
+        {
+            if (usuario == null)
             {
-                inicio = fin = null;
+                //throw new Exception("No encontrado el nodo con la clave");
+                return null;
             }
-
             else
             {
-                inicio = inicio.siguienteNodo;
-                inicio.siguienteNodo = null;
+                if (códigoUsuario.usuarioIgual(usuario.valorNodo())|| códigoUsuario.correoIgual(usuario.valorNodo()))
+                    return usuario;
+                else
+                    return buscarCorreo(códigoUsuario, usuario.siguienteNodo);
+            }
+        }
 
+
+
+
+        //Busca el correo y la contraseña del administrador
+        public Cls_NodoDoble buscarAdmi(object codigo)
+        {
+            ComparadorAdmin dato;
+            dato = (ComparadorAdmin)codigo;
+            return buscarAdmi(dato, inicio);
+            //return buscar(dato, inicio);
+        }
+
+        protected Cls_NodoDoble buscarAdmi(ComparadorAdmin código, Cls_NodoDoble usuario)
+        {
+            if (usuario == null)
+            {
+                //throw new Exception("No encontrado el nodo con la clave");
+                return null;
+            }
+            else
+            {
+                if (código.admiCorreoIgual(usuario.valorNodo()) && código.admiContraseñaIgual(usuario.valorNodo()))
+                    return usuario;
+                else
+                    return buscarAdmi(código, usuario.siguienteNodo);
             }
 
-            return dato;
 
         }
 
-        /*Quita el dato del final de la lista doblemente enlazada*/
-        public object QuitarDatoFinal()
+        //Busqueda de correo para la cuenta administrado
+        public Cls_NodoDoble buscarCorreoAdmi(object codigo)
         {
-            object dato = fin.datoNodo;
+            ComparadorAdmin dato;
+            dato = (ComparadorAdmin)codigo;
+            return buscarCorreoAdmi(dato, inicio);
+            //return buscar(dato, inicio);
+        }
 
-            if (inicio == fin)
+        protected Cls_NodoDoble buscarCorreoAdmi(ComparadorAdmin código, Cls_NodoDoble usuario)
+        {
+            if (usuario == null)
             {
-                inicio = fin = null;
+                //throw new Exception("No encontrado el nodo con la clave");
+                return null;
             }
-
             else
             {
-                fin = fin.anterioNodo;
-                fin.siguienteNodo = null;
+                if (código.admiCorreoIgual(usuario.valorNodo())|| código.adminUsuarioIgual(usuario.valorNodo()))
+                    return usuario;
+                else
+                    return buscarCorreoAdmi(código, usuario.siguienteNodo);
             }
 
-            return dato;
+
+
         }
+
     }
 }

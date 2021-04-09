@@ -55,6 +55,7 @@ namespace ProyectoDisney2021.Presentacion
             this.label7 = new System.Windows.Forms.Label();
             this.txtTarjeta = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -73,6 +74,7 @@ namespace ProyectoDisney2021.Presentacion
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.listBox1);
             this.panel1.Controls.Add(this.rdTerminos);
             this.panel1.Controls.Add(this.txtContraseña);
@@ -330,6 +332,18 @@ namespace ProyectoDisney2021.Presentacion
             this.label8.TabIndex = 0;
             this.label8.Text = "Tarjeta de crédito *";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Usuario",
+            "Administrador"});
+            this.comboBox1.Location = new System.Drawing.Point(137, 17);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.TabIndex = 10;
+            this.comboBox1.Text = "Tipo de usuario";
+            // 
             // datos_Usuario
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -380,5 +394,6 @@ namespace ProyectoDisney2021.Presentacion
         private System.Windows.Forms.TextBox txtTarjetaCodigo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

@@ -166,6 +166,9 @@ namespace ProyectoDisney2021.Presentacion
             reader.Close();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

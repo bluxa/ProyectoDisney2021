@@ -15,6 +15,7 @@ namespace ProyectoDisney2021.Estrutura_datos.Lista_doble
         //Variable para la insercion de la informacion
         public object datoNodo;
 
+        //Contructores
         
         public Cls_NodoDoble(object datoEntrada) 
         {
@@ -25,10 +26,19 @@ namespace ProyectoDisney2021.Estrutura_datos.Lista_doble
         public Cls_NodoDoble(object datoEntrada, Cls_NodoDoble principioNodo,Cls_NodoDoble ultimoNodo)       
         {
             datoNodo = datoEntrada;
-            siguienteNodo = ultimoNodo;
-            anterioNodo = principioNodo;
-            
+            siguienteNodo = principioNodo;
+            anterioNodo = ultimoNodo;
+        }
 
+
+
+        public object valorNodo()
+        {
+            return datoNodo;
+        }
+        public string visitar()
+        {
+            return datoNodo.ToString();
         }
     }
 }

@@ -49,8 +49,8 @@ namespace ProyectoDisney2021.Presentacion
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(298, 39);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(262, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(304, 24);
             this.label1.TabIndex = 0;
@@ -61,8 +61,8 @@ namespace ProyectoDisney2021.Presentacion
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(68, 135);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(211, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 19);
             this.label2.TabIndex = 1;
@@ -73,8 +73,8 @@ namespace ProyectoDisney2021.Presentacion
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(68, 175);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(211, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 19);
             this.label3.TabIndex = 2;
@@ -85,8 +85,8 @@ namespace ProyectoDisney2021.Presentacion
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(68, 213);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(211, 202);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 19);
             this.label4.TabIndex = 3;
@@ -97,8 +97,8 @@ namespace ProyectoDisney2021.Presentacion
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(68, 253);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(211, 242);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 19);
             this.label5.TabIndex = 4;
@@ -109,8 +109,8 @@ namespace ProyectoDisney2021.Presentacion
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(68, 291);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(211, 280);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 19);
             this.label6.TabIndex = 5;
@@ -118,7 +118,7 @@ namespace ProyectoDisney2021.Presentacion
             // 
             // txtIdP
             // 
-            this.txtIdP.Location = new System.Drawing.Point(192, 135);
+            this.txtIdP.Location = new System.Drawing.Point(335, 124);
             this.txtIdP.Name = "txtIdP";
             this.txtIdP.Size = new System.Drawing.Size(214, 23);
             this.txtIdP.TabIndex = 6;
@@ -133,40 +133,40 @@ namespace ProyectoDisney2021.Presentacion
             "Marvel",
             "Star Wars",
             "National Geographic"});
-            this.cmbCategoriaP.Location = new System.Drawing.Point(192, 175);
+            this.cmbCategoriaP.Location = new System.Drawing.Point(335, 164);
             this.cmbCategoriaP.Name = "cmbCategoriaP";
             this.cmbCategoriaP.Size = new System.Drawing.Size(214, 23);
             this.cmbCategoriaP.TabIndex = 7;
             // 
             // txtNombreP
             // 
-            this.txtNombreP.Location = new System.Drawing.Point(192, 213);
+            this.txtNombreP.Location = new System.Drawing.Point(335, 202);
             this.txtNombreP.Name = "txtNombreP";
             this.txtNombreP.Size = new System.Drawing.Size(214, 23);
             this.txtNombreP.TabIndex = 8;
             // 
             // txtImgP
             // 
-            this.txtImgP.Location = new System.Drawing.Point(192, 253);
+            this.txtImgP.Location = new System.Drawing.Point(335, 242);
             this.txtImgP.Name = "txtImgP";
             this.txtImgP.Size = new System.Drawing.Size(214, 23);
             this.txtImgP.TabIndex = 9;
             // 
             // txtIdVideoP
             // 
-            this.txtIdVideoP.Location = new System.Drawing.Point(192, 291);
+            this.txtIdVideoP.Location = new System.Drawing.Point(335, 280);
             this.txtIdVideoP.Name = "txtIdVideoP";
             this.txtIdVideoP.Size = new System.Drawing.Size(214, 23);
             this.txtIdVideoP.TabIndex = 10;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(192, 343);
+            this.button1.Location = new System.Drawing.Point(369, 342);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 48);
+            this.button1.Size = new System.Drawing.Size(117, 51);
             this.button1.TabIndex = 11;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = false;
@@ -176,9 +176,8 @@ namespace ProyectoDisney2021.Presentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(747, 430);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtIdVideoP);
             this.Controls.Add(this.txtImgP);
@@ -191,10 +190,9 @@ namespace ProyectoDisney2021.Presentacion
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Administrador";
             this.Text = "Administrador";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

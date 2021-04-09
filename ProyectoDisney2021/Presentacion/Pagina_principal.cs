@@ -82,5 +82,10 @@ namespace ProyectoDisney2021.Presentacion
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
