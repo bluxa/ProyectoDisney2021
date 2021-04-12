@@ -73,6 +73,13 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
 
         }
 
+
+        public bool nombrePeliculaIgual(object q)
+        {
+            throw new NotImplementedException();
+        }
+
+
         public object MostrarInformacion()
         {
             return correoUsuario + contraseñaUsuario;

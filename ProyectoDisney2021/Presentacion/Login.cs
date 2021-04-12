@@ -111,7 +111,7 @@ namespace ProyectoDisney2021.Presentacion
         void abreFormularioUsuario()
         {
             this.Hide();
-            Presentacion_contenido formularioUsuario = new Presentacion_contenido();
+            PresentacionContenido formularioUsuario = new PresentacionContenido();
             formularioUsuario.Show();
         }
 

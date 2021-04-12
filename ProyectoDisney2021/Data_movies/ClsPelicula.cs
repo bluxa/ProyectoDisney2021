@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ProyectoDisney2021.Estrutura_datos.Usuario;
 namespace ProyectoDisney2021.Data_movies
 {
-    public class ClsPelicula
+    public class ClsPelicula:ComparadorUsuario
     {
         public int idPelicula { get; set; }
         public string nombrePelicula { get; set; }
@@ -49,6 +49,35 @@ namespace ProyectoDisney2021.Data_movies
         {
             return null;
 
+        }
+
+        public bool usuarioIgual(object q)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool contraseñaIgual(object q)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool correoIgual(object q)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool nombrePeliculaIgual(object q)
+        {
+            ClsPelicula us2 = (ClsPelicula)q;
+            if (nombrePelicula.CompareTo(us2.nombrePelicula) == 0)
+                return true;
+            else
+                return false;
+        }
+
+        public override string ToString()
+        {
+            return nombrePelicula +" Si funciona"+imgPelicula;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoDisney2021.Data_movies;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,13 +29,26 @@ namespace ProyectoDisney2021.Estrutura_datos.Lista_simple
             return this;
         }
 
-        public ClsNodo buscarDato(object destino)
+        //public ClsNodo buscarDato(ClsPelicula destino)
+        //{
+        //    ClsNodo indice;
+
+        //    for (indice = primero; indice != null; indice = indice.enlace)
+        //        if (destino == indice.dato)  //	(destino.equals(indice.dato))
+        //            return indice;
+        //    return null;
+        //}
+
+        public ClsNodo buscarDato(ClsPelicula destino)
         {
             ClsNodo indice;
-            for (indice = primero; indice != null; indice = indice.enlace)
-                if (destino == indice.dato)  //	(destino.equals(indice.dato))
+
+            for (indice = primero; indice != null; indice = indice.enlace) 
+                if (destino.nombrePeliculaIgual(indice.dato))//	(destino.equals(indice.dato))
                     return indice;
             return null;
         }
+
+
     }
 }

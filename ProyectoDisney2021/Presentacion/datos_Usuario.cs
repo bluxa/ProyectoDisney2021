@@ -189,6 +189,31 @@ namespace ProyectoDisney2021.Presentacion
             }
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "Administrador")
+            {
+                panel2.Visible = false;
+            }
+            else
+            {
+                panel2.Visible = true;
+            }
+        }
 
+        private void datos_Usuario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            pictureBox3.WaitOnLoad = false;
+            if (comboBox2.Text == "Avatar 1")
+            {
+                pictureBox3.LoadAsync(@"" + "https://whatsondisneyplus.com/wp-content/uploads/2021/02/wanda-icon.png");
+
+            }
+        }
     }
 }

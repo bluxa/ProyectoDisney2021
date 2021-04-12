@@ -18,6 +18,8 @@ namespace ProyectoDisney2021
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new ProyectoDisney2021.Presentacion.Categorias.CatDisney());
+            //Application.Run(new ProyectoDisney2021.Presentacion.PresentacionContenido());
             Application.Run(new Pagina_principal());
         }
     }

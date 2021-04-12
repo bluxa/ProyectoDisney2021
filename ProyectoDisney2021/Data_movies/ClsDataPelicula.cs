@@ -49,5 +49,31 @@ namespace ProyectoDisney2021.Data_movies
                 miListaNatGeo.insertarDatoCabeza(nuevaPelicula);
             }
         }
+
+        public object buscarPelicula(ClsPelicula nuevaPelicula)
+        {
+            if (nuevaPelicula.idCategoria == 0)
+            {
+                return miListaDisney.buscarDato(nuevaPelicula);
+            }
+            else if (nuevaPelicula.idCategoria == 1)
+            {
+                return miListaPixar.buscarDato(nuevaPelicula);
+            }
+            else if (nuevaPelicula.idCategoria == 2)
+            {
+                return miListaMarvel.buscarDato(nuevaPelicula);
+            }
+            else if (nuevaPelicula.idCategoria == 3)
+            {
+                return miListaStarWars.buscarDato(nuevaPelicula);
+            }
+            else if (nuevaPelicula.idCategoria == 4)
+            {
+                return miListaNatGeo.buscarDato(nuevaPelicula);
+            }
+            return null;
+        }
+
     }
 }
