@@ -33,14 +33,16 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
                 objUsuario[index].tarjetaUsuario = reader.ReadLine();
                 objUsuario[index].codigoTarUsuario = reader.ReadLine();
                 objUsuario[index].direccionUsuario = reader.ReadLine();
-                
+                objUsuario[index].avarUsuario = reader.ReadLine();
+
+
             }
             reader.Close();
         }
 
         //Metodo para agregar un usuario
         public void AgregarUsuario(ref Cls_User[] objUsuario, string usuarioUser, string nombreUsuario, string correoUsuario,
-            string contraseñaUsuario, string tarjetaUsuario, string codigoTarUsuario, string direccionUsuario)
+            string contraseñaUsuario, string tarjetaUsuario, string codigoTarUsuario, string direccionUsuario,string avarUsuario)
         {
             StreamWriter writer = new StreamWriter("Usuarios.txt");
 
@@ -59,7 +61,7 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
                 writer.WriteLine(objUsuario[index].tarjetaUsuario);
                 writer.WriteLine(objUsuario[index].codigoTarUsuario);
                 writer.WriteLine(objUsuario[index].direccionUsuario);
-               
+                writer.WriteLine(objUsuario[index].avarUsuario);
 
             }
 
@@ -70,6 +72,7 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
             temp.tarjetaUsuario = tarjetaUsuario;
             temp.codigoTarUsuario = codigoTarUsuario;
             temp.direccionUsuario = direccionUsuario;
+            temp.avarUsuario = avarUsuario;
          
             writer.WriteLine(temp.usuarioUser);
             writer.WriteLine(temp.nombreUsuario);
@@ -78,8 +81,10 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
             writer.WriteLine(temp.tarjetaUsuario);
             writer.WriteLine(temp.codigoTarUsuario );
             writer.WriteLine(temp.direccionUsuario);
-         
-    
+            writer.WriteLine(temp.avarUsuario);
+
+
+
             writer.Close();
         }
 
@@ -96,6 +101,8 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
                 objAdmin[index].usuarioAdmin = reader.ReadLine();
                 objAdmin[index].contraseñaAdmin = reader.ReadLine();
                 objAdmin[index].CorreoAdmin = reader.ReadLine();
+               
+
 
             }
             reader.Close();

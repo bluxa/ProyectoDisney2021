@@ -40,7 +40,6 @@ C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-
 C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.datos_Usuario.resources
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.datos_Usuario.resources
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Login.resources
-C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Presentacion_contenido.resources
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Administrador.resources
 C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\bin\Debug\net5.0-windows\ProyectoDisney2021.exe
 C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\bin\Debug\net5.0-windows\ProyectoDisney2021.deps.json
@@ -78,3 +77,12 @@ C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debu
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Categorias.CatStartWars.resources
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.PresentacionContenido.resources
 C:\Users\Admin\source\repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Categorias.CatPixar.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Administracion_Usuario.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Administrador.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Administrado_Principal.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Categorias.CatDisney.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Categorias.CatMarvel.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Categorias.CatNational.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Categorias.CatPixar.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Categorias.CatStartWars.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.PresentacionContenido.resources

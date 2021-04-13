@@ -31,6 +31,8 @@ namespace ProyectoDisney2021.Presentacion
         public datos_Usuario()
         {
             InitializeComponent();
+            pictureBox5.Visible = false;
+            pictureBox4.Visible = false;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -70,17 +72,33 @@ namespace ProyectoDisney2021.Presentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             switch (comboBox1.SelectedIndex)
             {
                 case 0:
-                    ingresoUsuario();
-                    MessageBox.Show("Su cuenta es de tipo Usuario");
+
+                    if (txtUsuario.Text == "" || txtTelefono.Text == "" || txtTarjetaCodigo.Text == "" || txtTarjeta.Text == ""
+                       || txtNomap.Text == "" || txtDireccion.Text == "" || txtCorreo.Text == "" || txtContraseña.Text == "")
+                    { MessageBox.Show("Digite todos los datos"); }
+
+                    else
+                    {
+                        ingresoUsuario();
+                        MessageBox.Show("Su cuenta es de tipo Usuario");
+                    }
                     break;
 
                 case 1:
-                    ingresoAdmin();
-                    
-                    MessageBox.Show("Su cuenta es de tipo Administrador");
+
+                    if (txtUsuario.Text == "" || txtNomap.Text == "" || txtCorreo.Text == "" || txtContraseña.Text == "")
+                    { MessageBox.Show("Digite todos los datos"); }
+
+
+                    else
+                    {
+                        ingresoAdmin();
+                        MessageBox.Show("Su cuenta es de tipo Administrador");
+                    }
                     break;
 
                 default:
@@ -103,6 +121,8 @@ namespace ProyectoDisney2021.Presentacion
         {
             auxDatoUsuario = new Cls_DatosUsuario();
             informacionUsuario.CargarDatos(ref auxTexto);
+
+  
             //MostrarTodo(miUsuarioNuevo2);
 
             Cls_User miUsuario;
@@ -111,7 +131,7 @@ namespace ProyectoDisney2021.Presentacion
             {
                 miUsuario = new Cls_User(auxTexto[index].usuarioUser, auxTexto[index].nombreUsuario
                     , auxTexto[index].correoUsuario, auxTexto[index].contraseñaUsuario, auxTexto[index].tarjetaUsuario
-                    , auxTexto[index].codigoTarUsuario, auxTexto[index].direccionUsuario ) ;
+                    , auxTexto[index].codigoTarUsuario, auxTexto[index].direccionUsuario, auxTexto[index].avarUsuario) ;
 
 
                 //La informacion es leida del txt y se inserta denuevo a otra lista
@@ -123,7 +143,7 @@ namespace ProyectoDisney2021.Presentacion
         {
             //Ingreso de usuario a mi Lista Doble
             miUser1 = new Cls_User(txtUsuario.Text,txtNomap.Text,txtCorreo.Text,txtContraseña.Text,txtTarjeta.Text,
-                txtTarjetaCodigo.Text,txtDireccion.Text);
+                txtTarjetaCodigo.Text,txtDireccion.Text,txtInfo.Text);
 
             leeInsertarUsuario();
 
@@ -134,7 +154,7 @@ namespace ProyectoDisney2021.Presentacion
                 //Ingreso de usuario a mi Txt
                 informacionUsuario.CargarDatos(ref auxTexto);
                 informacionUsuario.AgregarUsuario(ref auxTexto, txtUsuario.Text, txtNomap.Text, txtCorreo.Text, txtContraseña.Text, txtTarjeta.Text,
-                txtTarjetaCodigo.Text, txtDireccion.Text);
+                txtTarjetaCodigo.Text, txtDireccion.Text,txtInfo.Text);
 
                 MessageBox.Show("La cuenta se ha creado exitosamente !!");
                 cierraFormulario();
@@ -193,11 +213,18 @@ namespace ProyectoDisney2021.Presentacion
         {
             if (comboBox1.Text == "Administrador")
             {
+                
                 panel2.Visible = false;
+                comboBox2.Enabled = false;
+                pictureBox5.Visible = true;
             }
             else
             {
                 panel2.Visible = true;
+                comboBox2.Enabled = true;
+                pictureBox4.Visible = true;
+                pictureBox5.Visible = false;
+
             }
         }
 
@@ -212,8 +239,77 @@ namespace ProyectoDisney2021.Presentacion
             if (comboBox2.Text == "Avatar 1")
             {
                 pictureBox3.LoadAsync(@"" + "https://whatsondisneyplus.com/wp-content/uploads/2021/02/wanda-icon.png");
+                txtInfo.Text = "https://whatsondisneyplus.com/wp-content/uploads/2021/02/wanda-icon.png";
 
             }
+            else if (comboBox2.Text == "Avatar 2")
+            {
+                pictureBox3.LoadAsync(@"" + "https://whatsondisneyplus.com/wp-content/uploads/2021/02/vision-avatar.png");
+                txtInfo.Text = "https://whatsondisneyplus.com/wp-content/uploads/2021/02/vision-avatar.png";
+
+            }
+            else if (comboBox2.Text == "Avatar 3")
+            {
+                pictureBox3.LoadAsync(@"" + "https://whatsondisneyplus.com/wp-content/uploads/2021/03/zemo-avatar.png");
+                txtInfo.Text = "https://whatsondisneyplus.com/wp-content/uploads/2021/03/zemo-avatar.png";
+            }
+            else if (comboBox2.Text == "Avatar 4")
+            {
+                pictureBox3.LoadAsync(@"" + "https://whatsondisneyplus.com/wp-content/uploads/2021/03/falcon-profile.png");
+                txtInfo.Text = "https://whatsondisneyplus.com/wp-content/uploads/2021/03/falcon-profile.png";
+
+            }
+            else if (comboBox2.Text == "Avatar 5")
+            {
+                pictureBox3.LoadAsync(@"" + "https://whatsondisneyplus.com/wp-content/uploads/2021/03/winter-avatar.png");
+                txtInfo.Text = "https://whatsondisneyplus.com/wp-content/uploads/2021/03/winter-avatar.png";
+
+            }
+            else if (comboBox2.Text == "Avatar 6")
+            {
+                pictureBox3.LoadAsync(@"" + "https://whatsondisneyplus.com/wp-content/uploads/2021/03/wanda-avatar-300x300.png");
+               txtInfo.Text = "https://whatsondisneyplus.com/wp-content/uploads/2021/03/wanda-avatar-300x300.png"; 
+
+            }
+
+
+
+
+        }
+
+        private void txtNomap_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCorreo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtContraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdTerminos_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

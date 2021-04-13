@@ -49,15 +49,16 @@ namespace ProyectoDisney2021.Presentacion
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1349, 653);
+            this.pictureBox1.Size = new System.Drawing.Size(1349, 655);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(31)))));
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -75,7 +76,7 @@ namespace ProyectoDisney2021.Presentacion
             this.btnIngresar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIngresar.BackgroundImage")));
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresar.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnIngresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnIngresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(41)))));
             this.btnIngresar.Image = ((System.Drawing.Image)(resources.GetObject("btnIngresar.Image")));
             this.btnIngresar.Location = new System.Drawing.Point(487, 473);
             this.btnIngresar.Name = "btnIngresar";
@@ -97,12 +98,12 @@ namespace ProyectoDisney2021.Presentacion
             // 
             // btnDato
             // 
-            this.btnDato.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnDato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(41)))));
             this.btnDato.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btnDato.FlatAppearance.BorderSize = 0;
             this.btnDato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDato.Image = ((System.Drawing.Image)(resources.GetObject("btnDato.Image")));
-            this.btnDato.Location = new System.Drawing.Point(487, 539);
+            this.btnDato.Location = new System.Drawing.Point(487, 546);
             this.btnDato.Name = "btnDato";
             this.btnDato.Size = new System.Drawing.Size(277, 33);
             this.btnDato.TabIndex = 8;
@@ -121,17 +122,18 @@ namespace ProyectoDisney2021.Presentacion
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(462, 357);
+            this.pictureBox4.Location = new System.Drawing.Point(477, 356);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(399, 69);
+            this.pictureBox4.Size = new System.Drawing.Size(399, 92);
             this.pictureBox4.TabIndex = 10;
             this.pictureBox4.TabStop = false;
             // 
             // txtGmail
             // 
+            this.txtGmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(62)))));
             this.txtGmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtGmail.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtGmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(169)))), ((int)(((byte)(173)))));
             this.txtGmail.Location = new System.Drawing.Point(487, 226);
             this.txtGmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 3);
             this.txtGmail.MaxLength = 32765;
@@ -142,9 +144,10 @@ namespace ProyectoDisney2021.Presentacion
             // 
             // txtPassword
             // 
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(62)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPassword.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(169)))), ((int)(((byte)(173)))));
             this.txtPassword.Location = new System.Drawing.Point(487, 367);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -158,7 +161,7 @@ namespace ProyectoDisney2021.Presentacion
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.chBoxVisib.AutoSize = true;
-            this.chBoxVisib.BackColor = System.Drawing.Color.White;
+            this.chBoxVisib.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(62)))));
             this.chBoxVisib.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.chBoxVisib.Location = new System.Drawing.Point(808, 373);
             this.chBoxVisib.Name = "chBoxVisib";
@@ -174,7 +177,7 @@ namespace ProyectoDisney2021.Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ClientSize = new System.Drawing.Size(958, 671);
+            this.ClientSize = new System.Drawing.Size(1026, 722);
             this.Controls.Add(this.chBoxVisib);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtGmail);
@@ -186,6 +189,7 @@ namespace ProyectoDisney2021.Presentacion
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Login";
             this.TransparencyKey = System.Drawing.SystemColors.ActiveCaptionText;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

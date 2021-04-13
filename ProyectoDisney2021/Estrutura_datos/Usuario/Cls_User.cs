@@ -17,6 +17,7 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
         public string tarjetaUsuario { get; set; }
         public string codigoTarUsuario { get; set; }
         public string direccionUsuario { get; set; }
+        public string avarUsuario{ get; set; }
 
         //Constructor vacio
         public Cls_User() { }
@@ -24,7 +25,7 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
 
         //Contructor General
         public Cls_User(string usuarioUser, string nombreUsuario, string correoUsuario,
-            string contraseñaUsuario, string tarjetaUsuario, string codigoTarUsuario, string direccionUsuario
+            string contraseñaUsuario, string tarjetaUsuario, string codigoTarUsuario, string direccionUsuario,string avarUsuario
             )
         {
             this.usuarioUser = usuarioUser;
@@ -34,6 +35,7 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
             this.tarjetaUsuario = tarjetaUsuario;
             this.codigoTarUsuario = codigoTarUsuario;
             this.direccionUsuario = direccionUsuario;
+            this.avarUsuario = avarUsuario;
 
         }
 
