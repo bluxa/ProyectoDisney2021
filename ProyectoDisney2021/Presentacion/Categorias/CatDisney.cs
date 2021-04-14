@@ -17,8 +17,8 @@ namespace ProyectoDisney2021.Presentacion.Categorias
     public partial class CatDisney : Form
     {
         ClsDataPelicula miListaPelicula = new ClsDataPelicula();
-        ClsPelicula miPelicula;
-        ClsPelicula[] auxPeliculaTxt;
+        Data_movies.ClsPelicula miPelicula;
+        Data_movies.ClsPelicula[] auxPeliculaTxt;
 
         public CatDisney()
         {
@@ -58,20 +58,20 @@ namespace ProyectoDisney2021.Presentacion.Categorias
                     pictureBox5.LoadAsync(@"" + auxPeliculaTxt[index].imgPelicula.ToString());
                 }
                 
-                miPelicula = new ClsPelicula(auxPeliculaTxt[index].idPelicula, auxPeliculaTxt[index].nombrePelicula, auxPeliculaTxt[index].idCategoria, auxPeliculaTxt[index].imgPelicula, auxPeliculaTxt[index].trailerPelicula);
+                miPelicula = new Data_movies.ClsPelicula(auxPeliculaTxt[index].idPelicula, auxPeliculaTxt[index].nombrePelicula, auxPeliculaTxt[index].idCategoria, auxPeliculaTxt[index].imgPelicula, auxPeliculaTxt[index].trailerPelicula);
                 miListaPelicula.agregarNuevaPelicula(miPelicula);
             }  
         }
 
-        public static void cargarPeliculasTxt(ref ClsPelicula[] auxPeliculaTxt, string nomCategoria)
+        public static void cargarPeliculasTxt(ref Data_movies.ClsPelicula[] auxPeliculaTxt, string nomCategoria)
         {
             StreamReader reader = new StreamReader(nomCategoria + ".txt");
             int size = Convert.ToInt32(reader.ReadLine());
-            auxPeliculaTxt = new ClsPelicula[size];
+            auxPeliculaTxt = new Data_movies.ClsPelicula[size];
 
             for (int index = 0; index < auxPeliculaTxt.Length; index++)
             {
-                auxPeliculaTxt[index] = new ClsPelicula();
+                auxPeliculaTxt[index] = new Data_movies.ClsPelicula();
                 auxPeliculaTxt[index].idPelicula = int.Parse(reader.ReadLine());
                 auxPeliculaTxt[index].nombrePelicula = reader.ReadLine();
                 auxPeliculaTxt[index].idCategoria = int.Parse(reader.ReadLine());
@@ -88,7 +88,7 @@ namespace ProyectoDisney2021.Presentacion.Categorias
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            miPelicula = new ClsPelicula();
+            miPelicula = new Data_movies.ClsPelicula();
             miPelicula.nombrePelicula = txtBuscar.Text;
             miPelicula.idCategoria = 0;
             //miListaPelicula.buscarPelicula(miPelicula);
@@ -111,6 +111,87 @@ namespace ProyectoDisney2021.Presentacion.Categorias
             this.Hide();
             PresentacionContenido formPresentacionCont = new PresentacionContenido();
             formPresentacionCont.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            string html = "<html><head>";
+            html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+            html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='100%' height='438' frameborder='0' allowfullscreen></iframe>";
+            html += "</body></html>";
+
+            if (auxPeliculaTxt[0] != null)
+            {
+                Form1 Formulario = new Form1();
+                Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[0].trailerPelicula);
+                Formulario.lbNombre.Text = auxPeliculaTxt[0].nombrePelicula.ToString();
+                Formulario.Show();
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            string html = "<html><head>";
+            html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+            html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='100%' height='438' frameborder='0' allowfullscreen></iframe>";
+            html += "</body></html>";
+
+            if (auxPeliculaTxt[1] != null )
+            {
+                Form1 Formulario = new Form1();
+                Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[1].trailerPelicula);
+                Formulario.lbNombre.Text = auxPeliculaTxt[1].nombrePelicula.ToString();
+                Formulario.Show();
+            }
+            
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            string html = "<html><head>";
+            html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+            html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='100%' height='438' frameborder='0' allowfullscreen></iframe>";
+            html += "</body></html>";
+
+            if (auxPeliculaTxt[2] != null)
+            {
+                Form1 Formulario = new Form1();
+                Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[2].trailerPelicula);
+                Formulario.lbNombre.Text = auxPeliculaTxt[2].nombrePelicula.ToString();
+                Formulario.Show();
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            string html = "<html><head>";
+            html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+            html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='100%' height='438' frameborder='0' allowfullscreen></iframe>";
+            html += "</body></html>";
+
+            if (auxPeliculaTxt[3] != null)
+            {
+                Form1 Formulario = new Form1();
+                Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[3].trailerPelicula);
+                Formulario.lbNombre.Text = auxPeliculaTxt[3].nombrePelicula.ToString();
+                Formulario.Show();
+            }
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            string html = "<html><head>";
+            html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+            html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='100%' height='438' frameborder='0' allowfullscreen></iframe>";
+            html += "</body></html>";
+
+            if (auxPeliculaTxt[4] != null)
+            {
+                Form1 Formulario = new Form1();
+                Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[4].trailerPelicula);
+                Formulario.lbNombre.Text = auxPeliculaTxt[4].nombrePelicula.ToString();
+                Formulario.Show();
+            }
         }
     }
 }

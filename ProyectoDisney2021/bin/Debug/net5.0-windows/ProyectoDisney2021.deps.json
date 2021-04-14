@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "ProyectoDisney2021/1.0.0": {
+        "dependencies": {
+          "VistaPelicula": "1.0.0"
+        },
         "runtime": {
           "ProyectoDisney2021.dll": {}
+        }
+      },
+      "VistaPelicula/1.0.0": {
+        "runtime": {
+          "VistaPelicula.exe": {}
         }
       }
     }
   },
   "libraries": {
     "ProyectoDisney2021/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VistaPelicula/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

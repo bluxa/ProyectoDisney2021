@@ -88,3 +88,9 @@ C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-
 C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.PresentacionContenido.resources
 C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Contenido_Pelicula.AxiliarPelicula.resources
 C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Contenido_Pelicula.VerPelicula.resources
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\bin\Debug\net5.0-windows\VistaPelicula.exe
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\bin\Debug\net5.0-windows\VistaPelicula.pdb
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\bin\Debug\net5.0-windows\VistaPelicula.exe.config
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Contenido_Pelicula.AxiliarPelicula.resources
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Contenido_Pelicula.VerPelicula.resources
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.csproj.CopyComplete

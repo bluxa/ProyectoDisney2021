@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoDisney2021.Data_movies;
 using ProyectoDisney2021.Estrutura_datos.Lista_simple;
+using VistaPelicula;
 
 namespace ProyectoDisney2021.Presentacion.Categorias
 {
@@ -102,6 +103,86 @@ namespace ProyectoDisney2021.Presentacion.Categorias
             else
             {
                 MessageBox.Show("Pelicula no encontrada");
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            string html = "<html><head>";
+            html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+            html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='100%' height='438' frameborder='0' allowfullscreen></iframe>";
+            html += "</body></html>";
+
+            if (auxPeliculaTxt[0] != null)
+            {
+                Form1 Formulario = new Form1();
+                Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[0].trailerPelicula);
+                Formulario.lbNombre.Text = auxPeliculaTxt[0].nombrePelicula.ToString();
+                Formulario.Show();
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            string html = "<html><head>";
+            html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+            html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='100%' height='438' frameborder='0' allowfullscreen></iframe>";
+            html += "</body></html>";
+
+            if (auxPeliculaTxt[1] != null)
+            {
+                Form1 Formulario = new Form1();
+                Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[1].trailerPelicula);
+                Formulario.lbNombre.Text = auxPeliculaTxt[1].nombrePelicula.ToString();
+                Formulario.Show();
+            }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            string html = "<html><head>";
+            html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+            html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='100%' height='438' frameborder='0' allowfullscreen></iframe>";
+            html += "</body></html>";
+
+            if (auxPeliculaTxt[2] != null)
+            {
+                Form1 Formulario = new Form1();
+                Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[2].trailerPelicula);
+                Formulario.lbNombre.Text = auxPeliculaTxt[2].nombrePelicula.ToString();
+                Formulario.Show();
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            string html = "<html><head>";
+            html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+            html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='100%' height='438' frameborder='0' allowfullscreen></iframe>";
+            html += "</body></html>";
+
+            if (auxPeliculaTxt[3] != null)
+            {
+                Form1 Formulario = new Form1();
+                Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[3].trailerPelicula);
+                Formulario.lbNombre.Text = auxPeliculaTxt[3].nombrePelicula.ToString();
+                Formulario.Show();
+            }
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            string html = "<html><head>";
+            html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+            html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='100%' height='438' frameborder='0' allowfullscreen></iframe>";
+            html += "</body></html>";
+
+            if (auxPeliculaTxt[4] != null)
+            {
+                Form1 Formulario = new Form1();
+                Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[4].trailerPelicula);
+                Formulario.lbNombre.Text = auxPeliculaTxt[4].nombrePelicula.ToString();
+                Formulario.Show();
             }
         }
     }

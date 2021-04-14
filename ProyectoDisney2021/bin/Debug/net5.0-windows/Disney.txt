@@ -1,11 +1,11 @@
 2
 1
 Soul
-0
-https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E486A02FA7B60669E77958D4FAE567AA5C9C57344006E1D1ADFC080719545166/scale?width=1200&aspectRatio=1.78&format=jpeg
-xOsLIiBStEs
+2
+https://lumiere-a.akamaihd.net/v1/images/sould_1920x1080_a1bce094.png
+3QIdlo4uIVg
 2
 Raya y el último dragón
-0
+2
 https://cdn.iphoneincanada.ca/wp-content/uploads/2021/02/raya-the-last-dragon.jpg
 hTh2-WnW1RI

@@ -1,0 +1,9 @@
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\bin\Debug\VistaPelicula.exe.config
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\bin\Debug\VistaPelicula.exe
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\bin\Debug\VistaPelicula.pdb
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\obj\Debug\VistaPelicula.Form1.resources
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\obj\Debug\VistaPelicula.Properties.Resources.resources
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\obj\Debug\VistaPelicula.csproj.GenerateResource.cache
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\obj\Debug\VistaPelicula.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\obj\Debug\VistaPelicula.exe
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\obj\Debug\VistaPelicula.pdb
