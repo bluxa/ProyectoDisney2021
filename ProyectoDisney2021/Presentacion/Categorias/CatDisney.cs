@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoDisney2021.Data_movies;
 using ProyectoDisney2021.Estrutura_datos.Lista_simple;
+using VistaPelicula;
 
 namespace ProyectoDisney2021.Presentacion.Categorias
 {

@@ -1,11 +1,29 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    "net5.0-windows7.0": {
+      "VistaPelicula/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/VistaPelicula.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VistaPelicula.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "VistaPelicula/1.0.0": {
+      "type": "project",
+      "path": "../VistaPelicula/VistaPelicula.csproj",
+      "msbuildProject": "../VistaPelicula/VistaPelicula.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net5.0-windows7.0": [
+      "VistaPelicula >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\PC\\.nuget\\packages\\": {}
@@ -13,11 +31,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Source\\Repos\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Source\\Repos\\bluxa\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj",
       "projectName": "ProyectoDisney2021",
-      "projectPath": "C:\\Users\\PC\\Source\\Repos\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj",
+      "projectPath": "C:\\Users\\PC\\Source\\Repos\\bluxa\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Source\\Repos\\ProyectoDisney2021\\ProyectoDisney2021\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Source\\Repos\\bluxa\\ProyectoDisney2021\\ProyectoDisney2021\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +51,11 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\PC\\Source\\Repos\\bluxa\\ProyectoDisney2021\\VistaPelicula\\VistaPelicula.csproj": {
+              "projectPath": "C:\\Users\\PC\\Source\\Repos\\bluxa\\ProyectoDisney2021\\VistaPelicula\\VistaPelicula.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
