@@ -21,8 +21,8 @@ namespace ProyectoDisney2021
             //Application.Run(new ProyectoDisney2021.Presentacion.Categorias.CatDisney());
             //Application.Run(new ProyectoDisney2021.Presentacion.PresentacionContenido());
              //Application.Run(new datos_Usuario());
-            //Application.Run(new Pagina_principal());
-            Application.Run(new Administrado_Principal());
+            Application.Run(new Pagina_principal());
+            //Application.Run(new Administrado_Principal());
 
         }
     }

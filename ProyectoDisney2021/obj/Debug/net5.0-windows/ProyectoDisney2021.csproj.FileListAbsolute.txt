@@ -86,3 +86,5 @@ C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-
 C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Categorias.CatPixar.resources
 C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Categorias.CatStartWars.resources
 C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.PresentacionContenido.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Contenido_Pelicula.AxiliarPelicula.resources
+C:\Users\PC\Source\Repos\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Contenido_Pelicula.VerPelicula.resources
