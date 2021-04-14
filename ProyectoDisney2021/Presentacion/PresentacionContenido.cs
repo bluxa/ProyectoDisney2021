@@ -11,20 +11,35 @@ using System.Resources;
 using System.IO;
 using ProyectoDisney2021.Data_movies;
 using ProyectoDisney2021.Presentacion.Categorias;
+using ProyectoDisney2021.Estrutura_datos.Lista_doble;
 
 namespace ProyectoDisney2021.Presentacion
 {
     public partial class PresentacionContenido : Form
     {
         ClsPelicula[] auxPeliculaTxt;
+
+        public Cls_ListaDoble miLista = new Cls_ListaDoble();
+        Cls_NodoDoble nodoList;
+        string usUser, nomUser, corrUser, avaUser;
+
         public PresentacionContenido()
         {
             InitializeComponent();
         }
 
+        public PresentacionContenido(object datoUsuario)
+        {
+            InitializeComponent();
+            miLista.insertarAlFinal(datoUsuario);
+            infoUsurio();
+        }
+
         private void Presentacion_contenido_Load(object sender, EventArgs e)
         {
             timer1.Start();
+            cargaAvatar();
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -170,6 +185,46 @@ namespace ProyectoDisney2021.Presentacion
             }
             reader.Close();
         }
+        public void infoUsurio()
+        {
+            nodoList = (Cls_NodoDoble)miLista.mostrar();
+            string nuevo = nodoList.datoNodo.ToString();
+            string[] palabras = nuevo.Split("&");
+
+            TextWriter escribirDato = new StreamWriter("Temp.txt");
+
+            foreach (string words in palabras)
+            {
+                escribirDato.WriteLine(words);
+
+            }
+            escribirDato.Close();
+        }
+
+        public void cargarUsuario()
+        {
+            TextReader leer = new StreamReader("Temp.txt");
+
+            usUser = leer.ReadLine();
+            nomUser = leer.ReadLine();
+            corrUser = leer.ReadLine();
+            avaUser = leer.ReadLine();
+            leer.Close();
+        }
+
+        public void cargaAvatar() 
+        {
+            panel1.Visible = false;
+            pictureBox2.WaitOnLoad = false;
+
+            cargarUsuario();
+
+            pictureBox2.LoadAsync(@"" + avaUser);
+
+            label4.Text = usUser;
+            label5.Text = nomUser;
+            label6.Text = corrUser;
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -181,6 +236,43 @@ namespace ProyectoDisney2021.Presentacion
             this.Hide();
             CatPixar formCatPixar = new CatPixar();
             formCatPixar.Show();
+        }
+
+        private void pictureSlider_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
+
+        private void PresentacionContenido_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+            DialogResult result = MessageBox.Show("Desea cerrar la sesion", "Mensaje de sesion", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Error);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                Login loginInico = new Login();
+                loginInico.Show();
+
+            }
+         
+
         }
 
         private void pictureMarvel_Click(object sender, EventArgs e)

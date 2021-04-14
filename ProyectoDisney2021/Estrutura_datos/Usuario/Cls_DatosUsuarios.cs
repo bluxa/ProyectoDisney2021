@@ -32,7 +32,7 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
         public object buscarDatosCompletos(Cls_User miUsuario)
         {
             if (miLista.buscarUsuario(miUsuario) != null)
-                return miLista.buscarUsuario(miUsuario).visitar();
+                return miLista.buscarUsuario(miUsuario);
             else
                 return null;
         }

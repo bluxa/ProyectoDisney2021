@@ -22431,6 +22431,16 @@
         ya3y/GUuVny+NKgAkWRj66hjsAKU5OmCdVSgGR7zP3oHInSn/P9B3Si9bjQrYAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAALMAAABYCAYAAAC+l8ayAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAPtJREFUeF7t0kENACAMADEeJBiYf6vDx6WPOui5bxYKZCZDZjJkJkNmMmQmQ2Yy
+        ZCZDZjJkJkNmMmQmQ2YyZCZDZjJkJkNmMmQmQ2YyZCZDZjJkJkNmMmQmQ2YyZCZDZjJkJkNmMmQmQ2Yy
+        ZCZDZjJkJkNmMmQmQ2YyZCZDZjJkJkNmMmQmQ2YyZCZDZjJkJkNmMmQmQ2YyZCZDZjJkJkNmMmQmQ2Yy
+        ZCZDZjJkJkNmMmQmQ2YyZCZDZjJkJkNmMmQmQ2YyZCZDZjJkJkNmMmQmQ2YyZCZDZjJkJkNmMmQmQ2Yy
+        ZCZDZjJkJkNmMmQmQ2YyZCZDZjJkJmL2AzKMwe1p11gZAAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>54</value>
   </metadata>

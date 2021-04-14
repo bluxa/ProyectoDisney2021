@@ -44,12 +44,20 @@ namespace ProyectoDisney2021.Presentacion
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.contenidoForm = new System.Windows.Forms.Panel();
             this.contenidoFom = new System.Windows.Forms.Panel();
+            this.PanelCategoria = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.bntRegistroDisney = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.barraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuMargen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.contenidoForm.SuspendLayout();
+            this.PanelCategoria.SuspendLayout();
             this.SuspendLayout();
             // 
             // barraTitulo
@@ -101,6 +109,7 @@ namespace ProyectoDisney2021.Presentacion
             // menuMargen
             // 
             this.menuMargen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.menuMargen.Controls.Add(this.PanelCategoria);
             this.menuMargen.Controls.Add(this.panel3);
             this.menuMargen.Controls.Add(this.panel2);
             this.menuMargen.Controls.Add(this.panel1);
@@ -153,8 +162,9 @@ namespace ProyectoDisney2021.Presentacion
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(217, 32);
             this.button3.TabIndex = 2;
-            this.button3.Text = "   Administradores";
+            this.button3.Text = "Registro movie";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -225,6 +235,97 @@ namespace ProyectoDisney2021.Presentacion
             this.contenidoFom.Size = new System.Drawing.Size(853, 561);
             this.contenidoFom.TabIndex = 0;
             // 
+            // PanelCategoria
+            // 
+            this.PanelCategoria.Controls.Add(this.button6);
+            this.PanelCategoria.Controls.Add(this.panel7);
+            this.PanelCategoria.Controls.Add(this.bntRegistroDisney);
+            this.PanelCategoria.Controls.Add(this.panel6);
+            this.PanelCategoria.Controls.Add(this.panel5);
+            this.PanelCategoria.Controls.Add(this.button4);
+            this.PanelCategoria.Location = new System.Drawing.Point(37, 379);
+            this.PanelCategoria.Name = "PanelCategoria";
+            this.PanelCategoria.Size = new System.Drawing.Size(192, 160);
+            this.PanelCategoria.TabIndex = 3;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(17, 17);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(167, 32);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Registro movie";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(40)))), ((int)(((byte)(90)))));
+            this.panel5.Location = new System.Drawing.Point(6, 17);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(5, 32);
+            this.panel5.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(40)))), ((int)(((byte)(90)))));
+            this.panel6.Location = new System.Drawing.Point(6, 64);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(5, 32);
+            this.panel6.TabIndex = 5;
+            // 
+            // bntRegistroDisney
+            // 
+            this.bntRegistroDisney.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.bntRegistroDisney.FlatAppearance.BorderSize = 0;
+            this.bntRegistroDisney.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.bntRegistroDisney.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.bntRegistroDisney.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntRegistroDisney.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bntRegistroDisney.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.bntRegistroDisney.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bntRegistroDisney.Location = new System.Drawing.Point(17, 64);
+            this.bntRegistroDisney.Name = "bntRegistroDisney";
+            this.bntRegistroDisney.Size = new System.Drawing.Size(167, 32);
+            this.bntRegistroDisney.TabIndex = 6;
+            this.bntRegistroDisney.Text = "Registro movie";
+            this.bntRegistroDisney.UseVisualStyleBackColor = true;
+            this.bntRegistroDisney.Click += new System.EventHandler(this.bntRegistroDisney_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(40)))), ((int)(((byte)(90)))));
+            this.panel7.Location = new System.Drawing.Point(6, 112);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 32);
+            this.panel7.TabIndex = 2;
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(17, 112);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(167, 32);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "Registro movie";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Administrado_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -245,6 +346,7 @@ namespace ProyectoDisney2021.Presentacion
             this.menuMargen.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.contenidoForm.ResumeLayout(false);
+            this.PanelCategoria.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -265,5 +367,12 @@ namespace ProyectoDisney2021.Presentacion
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel contenidoFom;
+        private System.Windows.Forms.Panel PanelCategoria;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button bntRegistroDisney;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button4;
     }
 }

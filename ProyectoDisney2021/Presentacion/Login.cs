@@ -18,7 +18,7 @@ namespace ProyectoDisney2021.Presentacion
         Cls_User miUser1; Cls_User[] auxTexto;
         Cls_UsuarioAdmin miAdmi1; Cls_UsuarioAdmin[] auxTextoAdmi;
 
-
+        object retornaDato;
         //Estas Clases serviran para iniciar la lista doble eh insertarla.
         Cls_DatosUsuario datoUsuario = new Cls_DatosUsuario();
         Cls_DatosUsuario datoAdmin = new Cls_DatosUsuario();
@@ -45,7 +45,7 @@ namespace ProyectoDisney2021.Presentacion
 
             if (datoAdmin.buscarDatosAdministrador(miAdmi1) != null)
             {
-                MessageBox.Show("Bienvenido Administrador");
+                MessageBox.Show("Bienvenido Administrador", "Login exitoso", MessageBoxButtons.OK,MessageBoxIcon.Information);
               
                 abreFormularioAdmin();
             }
@@ -64,12 +64,19 @@ namespace ProyectoDisney2021.Presentacion
 
             if (datoUsuario.buscarDatosCompletos(miUser1) != null)
             {
-                MessageBox.Show("Bienvenido Usuario");
-               abreFormularioUsuario();
+                MessageBox.Show("Bienvenido Usuario", "Login exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+
+                retornaDato = datoUsuario.buscarDatosCompletos(miUser1);
+
+                PresentacionContenido verCotenido = new PresentacionContenido(retornaDato);
+
+                this.Hide();
+
+                verCotenido.Show();
             }
 
-            else { MessageBox.Show("NO ENCONTRADO"); }
+            else { MessageBox.Show("No esta registrado en nuestros registros", "Error al iniciar", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
         }
 
@@ -108,12 +115,7 @@ namespace ProyectoDisney2021.Presentacion
             }
 
         }
-        void abreFormularioUsuario()
-        {
-            this.Hide();
-            PresentacionContenido formularioUsuario = new PresentacionContenido();
-            formularioUsuario.Show();
-        }
+  
 
         void abreFormularioAdmin()
         {

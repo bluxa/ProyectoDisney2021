@@ -145,7 +145,10 @@ namespace ProyectoDisney2021.Estrutura_datos.Lista_doble
                     return buscarCorreoAdmi(código, usuario.siguienteNodo);
             }
 
-
+        }
+        public Cls_NodoDoble mostrar()
+        {
+            return (Cls_NodoDoble)inicio.valorNodo();
 
         }
 

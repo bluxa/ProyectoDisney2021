@@ -79,31 +79,42 @@ namespace ProyectoDisney2021.Presentacion
 
                     if (txtUsuario.Text == "" || txtTelefono.Text == "" || txtTarjetaCodigo.Text == "" || txtTarjeta.Text == ""
                        || txtNomap.Text == "" || txtDireccion.Text == "" || txtCorreo.Text == "" || txtContraseña.Text == "")
-                    { MessageBox.Show("Digite todos los datos"); }
+                    {
+                        MessageBox.Show("Escriba en todos los campos", "Informacion de la cuenta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
 
                     else
                     {
                         ingresoUsuario();
-                        MessageBox.Show("Su cuenta es de tipo Usuario");
+
+                        MessageBox.Show("Su cuenta es de tipo administrador", "Informacion de la cuenta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     }
                     break;
 
                 case 1:
 
                     if (txtUsuario.Text == "" || txtNomap.Text == "" || txtCorreo.Text == "" || txtContraseña.Text == "")
-                    { MessageBox.Show("Digite todos los datos"); }
+                    {
+                        MessageBox.Show("Escriba en todos los campos", "Informacion de la cuenta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
+            
 
 
                     else
                     {
                         ingresoAdmin();
-                        MessageBox.Show("Su cuenta es de tipo Administrador");
+  
+                      MessageBox.Show("Su cuenta es de tipo administrador", "Informacion de la cuenta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     }
                     break;
 
                 default:
-                    MessageBox.Show("Debe de eligir un tipo de usuario !!");
-                    break;
+
+                    MessageBox.Show("Debe de eligir un tipo de usuario", "Informacion de la cuenta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            
+            break;
             }
         }
 

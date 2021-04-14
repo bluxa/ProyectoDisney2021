@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProyectoDisney2021.Presentacion.InfoAdmin_Pelicula;
 
 namespace ProyectoDisney2021.Presentacion
 {
@@ -15,6 +16,7 @@ namespace ProyectoDisney2021.Presentacion
         public Administrado_Principal()
         {
             InitializeComponent();
+            PanelCategoria.Visible = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -61,6 +63,27 @@ namespace ProyectoDisney2021.Presentacion
         {
             abrirFormEnPanel(new Administracion_Usuario());
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PanelCategoria.Visible = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            abrirFormEnPanel(new Info_Marvel_Pixar());
+        }
+
+        private void bntRegistroDisney_Click(object sender, EventArgs e)
+        {
+            abrirFormEnPanel(new Info_Disney_StarWars());
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            abrirFormEnPanel(new Info_National());
         }
     }
 }

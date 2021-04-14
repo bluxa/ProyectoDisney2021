@@ -81,6 +81,11 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
             throw new NotImplementedException();
         }
 
+        public override string ToString()
+        {
+            return "" + usuarioUser + "" + "&" + nombreUsuario + "&" + correoUsuario + "&" + avarUsuario;
+        }
+
 
         public object MostrarInformacion()
         {
