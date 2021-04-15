@@ -105,3 +105,6 @@ C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\n
 C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.InfoAdmin_Pelicula.Info_Disney_StarWars.resources
 C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.InfoAdmin_Pelicula.Info_Marvel_Pixar.resources
 C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.InfoAdmin_Pelicula.Info_National.resources
+C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Contenido_Barra.Busqueda_Pelicula.resources
+C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Contenido_Barra.Lista_Pelicula.resources
+C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Contenido_Barra.Originales_Peliculas.resources

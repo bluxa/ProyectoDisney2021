@@ -32,12 +32,6 @@ namespace ProyectoDisney2021.Presentacion
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PresentacionContenido));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnInicio = new System.Windows.Forms.Button();
-            this.btnBusqueda = new System.Windows.Forms.Button();
-            this.btnMiLista = new System.Windows.Forms.Button();
-            this.btnOriginales = new System.Windows.Forms.Button();
-            this.btnPeliculas = new System.Windows.Forms.Button();
-            this.btnSeries = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureSlider = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -67,6 +61,12 @@ namespace ProyectoDisney2021.Presentacion
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnInicio = new System.Windows.Forms.Button();
+            this.btnBusqueda = new System.Windows.Forms.Button();
+            this.btnOriginales = new System.Windows.Forms.Button();
+            this.btnPeliculas = new System.Windows.Forms.Button();
+            this.btnMilista = new System.Windows.Forms.Button();
+            this.btnSeries = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSlider)).BeginInit();
@@ -93,97 +93,13 @@ namespace ProyectoDisney2021.Presentacion
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(28, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(161, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(135, 74);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // btnInicio
-            // 
-            this.btnInicio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInicio.BackgroundImage")));
-            this.btnInicio.FlatAppearance.BorderSize = 0;
-            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnInicio.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnInicio.ForeColor = System.Drawing.Color.White;
-            this.btnInicio.Location = new System.Drawing.Point(212, 29);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(139, 49);
-            this.btnInicio.TabIndex = 1;
-            this.btnInicio.Text = "INICIO";
-            this.btnInicio.UseVisualStyleBackColor = true;
-            // 
-            // btnBusqueda
-            // 
-            this.btnBusqueda.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBusqueda.BackgroundImage")));
-            this.btnBusqueda.FlatAppearance.BorderSize = 0;
-            this.btnBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBusqueda.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBusqueda.ForeColor = System.Drawing.Color.White;
-            this.btnBusqueda.Location = new System.Drawing.Point(357, 29);
-            this.btnBusqueda.Name = "btnBusqueda";
-            this.btnBusqueda.Size = new System.Drawing.Size(139, 49);
-            this.btnBusqueda.TabIndex = 2;
-            this.btnBusqueda.Text = "BÚSQUEDA";
-            this.btnBusqueda.UseVisualStyleBackColor = true;
-            // 
-            // btnMiLista
-            // 
-            this.btnMiLista.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMiLista.BackgroundImage")));
-            this.btnMiLista.FlatAppearance.BorderSize = 0;
-            this.btnMiLista.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMiLista.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnMiLista.ForeColor = System.Drawing.Color.White;
-            this.btnMiLista.Location = new System.Drawing.Point(502, 29);
-            this.btnMiLista.Name = "btnMiLista";
-            this.btnMiLista.Size = new System.Drawing.Size(139, 49);
-            this.btnMiLista.TabIndex = 3;
-            this.btnMiLista.Text = "MI LISTA";
-            this.btnMiLista.UseVisualStyleBackColor = true;
-            // 
-            // btnOriginales
-            // 
-            this.btnOriginales.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOriginales.BackgroundImage")));
-            this.btnOriginales.FlatAppearance.BorderSize = 0;
-            this.btnOriginales.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnOriginales.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnOriginales.ForeColor = System.Drawing.Color.White;
-            this.btnOriginales.Location = new System.Drawing.Point(647, 29);
-            this.btnOriginales.Name = "btnOriginales";
-            this.btnOriginales.Size = new System.Drawing.Size(139, 49);
-            this.btnOriginales.TabIndex = 4;
-            this.btnOriginales.Text = "ORIGINALES";
-            this.btnOriginales.UseVisualStyleBackColor = true;
-            // 
-            // btnPeliculas
-            // 
-            this.btnPeliculas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPeliculas.BackgroundImage")));
-            this.btnPeliculas.FlatAppearance.BorderSize = 0;
-            this.btnPeliculas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPeliculas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPeliculas.ForeColor = System.Drawing.Color.White;
-            this.btnPeliculas.Location = new System.Drawing.Point(792, 29);
-            this.btnPeliculas.Name = "btnPeliculas";
-            this.btnPeliculas.Size = new System.Drawing.Size(139, 49);
-            this.btnPeliculas.TabIndex = 5;
-            this.btnPeliculas.Text = "PELICULAS";
-            this.btnPeliculas.UseVisualStyleBackColor = true;
-            // 
-            // btnSeries
-            // 
-            this.btnSeries.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSeries.BackgroundImage")));
-            this.btnSeries.FlatAppearance.BorderSize = 0;
-            this.btnSeries.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSeries.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSeries.ForeColor = System.Drawing.Color.White;
-            this.btnSeries.Location = new System.Drawing.Point(937, 29);
-            this.btnSeries.Name = "btnSeries";
-            this.btnSeries.Size = new System.Drawing.Size(139, 49);
-            this.btnSeries.TabIndex = 6;
-            this.btnSeries.Text = "SERIES";
-            this.btnSeries.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
@@ -504,6 +420,128 @@ namespace ProyectoDisney2021.Presentacion
             this.label4.TabIndex = 0;
             this.label4.Text = "label4";
             // 
+            // btnInicio
+            // 
+            this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
+            this.btnInicio.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnInicio.FlatAppearance.BorderSize = 0;
+            this.btnInicio.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnInicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnInicio.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
+            this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInicio.Location = new System.Drawing.Point(224, 36);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(139, 32);
+            this.btnInicio.TabIndex = 28;
+            this.btnInicio.Text = "Inicio";
+            this.btnInicio.UseVisualStyleBackColor = false;
+            this.btnInicio.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnBusqueda
+            // 
+            this.btnBusqueda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
+            this.btnBusqueda.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBusqueda.FlatAppearance.BorderSize = 0;
+            this.btnBusqueda.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnBusqueda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnBusqueda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBusqueda.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBusqueda.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBusqueda.Image = ((System.Drawing.Image)(resources.GetObject("btnBusqueda.Image")));
+            this.btnBusqueda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBusqueda.Location = new System.Drawing.Point(369, 36);
+            this.btnBusqueda.Name = "btnBusqueda";
+            this.btnBusqueda.Size = new System.Drawing.Size(139, 32);
+            this.btnBusqueda.TabIndex = 29;
+            this.btnBusqueda.Text = "     Bùsqueda";
+            this.btnBusqueda.UseVisualStyleBackColor = false;
+            this.btnBusqueda.Click += new System.EventHandler(this.btnBusqueda_Click);
+            // 
+            // btnOriginales
+            // 
+            this.btnOriginales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
+            this.btnOriginales.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnOriginales.FlatAppearance.BorderSize = 0;
+            this.btnOriginales.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnOriginales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnOriginales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnOriginales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOriginales.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnOriginales.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnOriginales.Image = ((System.Drawing.Image)(resources.GetObject("btnOriginales.Image")));
+            this.btnOriginales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOriginales.Location = new System.Drawing.Point(659, 36);
+            this.btnOriginales.Name = "btnOriginales";
+            this.btnOriginales.Size = new System.Drawing.Size(139, 32);
+            this.btnOriginales.TabIndex = 30;
+            this.btnOriginales.Text = "  Originales";
+            this.btnOriginales.UseVisualStyleBackColor = false;
+            this.btnOriginales.Click += new System.EventHandler(this.btnOriginales_Click);
+            // 
+            // btnPeliculas
+            // 
+            this.btnPeliculas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
+            this.btnPeliculas.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnPeliculas.FlatAppearance.BorderSize = 0;
+            this.btnPeliculas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnPeliculas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnPeliculas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPeliculas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPeliculas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPeliculas.Image = ((System.Drawing.Image)(resources.GetObject("btnPeliculas.Image")));
+            this.btnPeliculas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPeliculas.Location = new System.Drawing.Point(804, 36);
+            this.btnPeliculas.Name = "btnPeliculas";
+            this.btnPeliculas.Size = new System.Drawing.Size(139, 32);
+            this.btnPeliculas.TabIndex = 31;
+            this.btnPeliculas.Text = "  Peliculas";
+            this.btnPeliculas.UseVisualStyleBackColor = false;
+            // 
+            // btnMilista
+            // 
+            this.btnMilista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
+            this.btnMilista.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMilista.FlatAppearance.BorderSize = 0;
+            this.btnMilista.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnMilista.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnMilista.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnMilista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMilista.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnMilista.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnMilista.Image = ((System.Drawing.Image)(resources.GetObject("btnMilista.Image")));
+            this.btnMilista.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMilista.Location = new System.Drawing.Point(514, 36);
+            this.btnMilista.Name = "btnMilista";
+            this.btnMilista.Size = new System.Drawing.Size(139, 32);
+            this.btnMilista.TabIndex = 32;
+            this.btnMilista.Text = "  Mi lista";
+            this.btnMilista.UseVisualStyleBackColor = false;
+            this.btnMilista.Click += new System.EventHandler(this.btnMilista_Click);
+            // 
+            // btnSeries
+            // 
+            this.btnSeries.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
+            this.btnSeries.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSeries.FlatAppearance.BorderSize = 0;
+            this.btnSeries.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnSeries.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnSeries.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeries.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSeries.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSeries.Image = ((System.Drawing.Image)(resources.GetObject("btnSeries.Image")));
+            this.btnSeries.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSeries.Location = new System.Drawing.Point(949, 36);
+            this.btnSeries.Name = "btnSeries";
+            this.btnSeries.Size = new System.Drawing.Size(139, 32);
+            this.btnSeries.TabIndex = 33;
+            this.btnSeries.Text = "  Series";
+            this.btnSeries.UseVisualStyleBackColor = false;
+            // 
             // PresentacionContenido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -512,7 +550,13 @@ namespace ProyectoDisney2021.Presentacion
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1293, 766);
+            this.ClientSize = new System.Drawing.Size(1327, 749);
+            this.Controls.Add(this.btnSeries);
+            this.Controls.Add(this.btnMilista);
+            this.Controls.Add(this.btnPeliculas);
+            this.Controls.Add(this.btnOriginales);
+            this.Controls.Add(this.btnBusqueda);
+            this.Controls.Add(this.btnInicio);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox8);
@@ -534,17 +578,11 @@ namespace ProyectoDisney2021.Presentacion
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureSlider);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btnSeries);
-            this.Controls.Add(this.btnPeliculas);
-            this.Controls.Add(this.btnOriginales);
-            this.Controls.Add(this.btnMiLista);
-            this.Controls.Add(this.btnBusqueda);
-            this.Controls.Add(this.btnInicio);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "PresentacionContenido";
-            this.Text = "Presentacion Contenido";
+            this.Text = "Mi lista";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Presentacion_contenido_Load);
             this.Click += new System.EventHandler(this.PresentacionContenido_Click);
@@ -576,12 +614,6 @@ namespace ProyectoDisney2021.Presentacion
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnInicio;
-        private System.Windows.Forms.Button btnBusqueda;
-        private System.Windows.Forms.Button btnMiLista;
-        private System.Windows.Forms.Button btnOriginales;
-        private System.Windows.Forms.Button btnPeliculas;
-        private System.Windows.Forms.Button btnSeries;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureSlider;
         private System.Windows.Forms.Timer timer1;
@@ -611,5 +643,11 @@ namespace ProyectoDisney2021.Presentacion
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnInicio;
+        private System.Windows.Forms.Button btnBusqueda;
+        private System.Windows.Forms.Button btnOriginales;
+        private System.Windows.Forms.Button btnPeliculas;
+        private System.Windows.Forms.Button btnMilista;
+        private System.Windows.Forms.Button btnSeries;
     }
 }

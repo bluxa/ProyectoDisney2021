@@ -11,6 +11,7 @@ using System.Resources;
 using System.IO;
 using ProyectoDisney2021.Data_movies;
 using ProyectoDisney2021.Presentacion.Categorias;
+using ProyectoDisney2021.Presentacion.Contenido_Barra;
 using ProyectoDisney2021.Estrutura_datos.Lista_doble;
 
 namespace ProyectoDisney2021.Presentacion
@@ -272,6 +273,34 @@ namespace ProyectoDisney2021.Presentacion
 
             }
          
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBusqueda_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Busqueda_Pelicula busquedaPelicula = new Busqueda_Pelicula();
+            busquedaPelicula.Show();
+
+        }
+
+        private void btnMilista_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Lista_Pelicula listaPelicula = new Lista_Pelicula();
+            listaPelicula.Show();
+        }
+
+        private void btnOriginales_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Originales_Peliculas origialPelicula = new Originales_Peliculas();
+            origialPelicula.Show();
 
         }
 
