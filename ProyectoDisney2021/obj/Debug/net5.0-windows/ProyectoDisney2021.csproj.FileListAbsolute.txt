@@ -111,9 +111,7 @@ C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\n
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Contenido_Barra.Busqueda_Pelicula.resources
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Contenido_Barra.Lista_Pelicula.resources
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.Contenido_Barra.Originales_Peliculas.resources
-C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.InfoAdmin_Pelicula.Info_Disney_StarWars.resources
 C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.InfoAdmin_Pelicula.Info_Marvel_Pixar.resources
-C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\ProyectoDisney2021\obj\Debug\net5.0-windows\ProyectoDisney2021.Presentacion.InfoAdmin_Pelicula.Info_National.resources
 C:\Users\PC\source\repos\ProyectoDisney2021\ProyectoDisney2021\bin\Debug\net5.0-windows\VistaPelicula.exe
 C:\Users\PC\source\repos\ProyectoDisney2021\ProyectoDisney2021\bin\Debug\net5.0-windows\VistaPelicula.pdb
 C:\Users\PC\source\repos\ProyectoDisney2021\ProyectoDisney2021\bin\Debug\net5.0-windows\VistaPelicula.exe.config

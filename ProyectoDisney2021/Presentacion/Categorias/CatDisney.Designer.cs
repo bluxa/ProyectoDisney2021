@@ -39,6 +39,7 @@ namespace ProyectoDisney2021.Presentacion.Categorias
             this.btnBuscar = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -46,6 +47,7 @@ namespace ProyectoDisney2021.Presentacion.Categorias
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureSlider
@@ -53,7 +55,7 @@ namespace ProyectoDisney2021.Presentacion.Categorias
             this.pictureSlider.Image = ((System.Drawing.Image)(resources.GetObject("pictureSlider.Image")));
             this.pictureSlider.Location = new System.Drawing.Point(83, 42);
             this.pictureSlider.Name = "pictureSlider";
-            this.pictureSlider.Size = new System.Drawing.Size(1191, 423);
+            this.pictureSlider.Size = new System.Drawing.Size(1191, 427);
             this.pictureSlider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureSlider.TabIndex = 9;
             this.pictureSlider.TabStop = false;
@@ -149,6 +151,17 @@ namespace ProyectoDisney2021.Presentacion.Categorias
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(474, 231);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(313, 155);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 26;
+            this.pictureBox7.TabStop = false;
+            // 
             // CatDisney
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -156,6 +169,7 @@ namespace ProyectoDisney2021.Presentacion.Categorias
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1118, 699);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.btnBuscar);
@@ -176,6 +190,7 @@ namespace ProyectoDisney2021.Presentacion.Categorias
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +207,6 @@ namespace ProyectoDisney2021.Presentacion.Categorias
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

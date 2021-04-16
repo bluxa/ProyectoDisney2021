@@ -1,35 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\source\\repos\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\bluxa\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\source\\repos\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\bluxa\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\bluxa\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj",
         "projectName": "ProyectoDisney2021",
-        "projectPath": "C:\\Users\\PC\\source\\repos\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\source\\repos\\ProyectoDisney2021\\ProyectoDisney2021\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\bluxa\\ProyectoDisney2021\\ProyectoDisney2021\\ProyectoDisney2021.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\bluxa\\ProyectoDisney2021\\ProyectoDisney2021\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\PC\\source\\repos\\ProyectoDisney2021\\VistaPelicula\\VistaPelicula.csproj": {
-                "projectPath": "C:\\Users\\PC\\source\\repos\\ProyectoDisney2021\\VistaPelicula\\VistaPelicula.csproj"
+              "C:\\Users\\Admin\\source\\repos\\bluxa\\ProyectoDisney2021\\VistaPelicula\\VistaPelicula.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\bluxa\\ProyectoDisney2021\\VistaPelicula\\VistaPelicula.csproj"
               }
             }
           }
@@ -61,15 +60,15 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\PC\\source\\repos\\ProyectoDisney2021\\VistaPelicula\\VistaPelicula.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\bluxa\\ProyectoDisney2021\\VistaPelicula\\VistaPelicula.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\ProyectoDisney2021\\VistaPelicula\\VistaPelicula.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\bluxa\\ProyectoDisney2021\\VistaPelicula\\VistaPelicula.csproj",
         "projectName": "VistaPelicula",
-        "projectPath": "C:\\Users\\PC\\source\\repos\\ProyectoDisney2021\\VistaPelicula\\VistaPelicula.csproj"
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\bluxa\\ProyectoDisney2021\\VistaPelicula\\VistaPelicula.csproj"
       },
       "frameworks": {
         "net45": {}

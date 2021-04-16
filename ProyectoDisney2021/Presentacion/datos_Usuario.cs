@@ -78,7 +78,7 @@ namespace ProyectoDisney2021.Presentacion
                 case 0:
 
                     if (txtUsuario.Text == "" || txtTelefono.Text == "" || txtTarjetaCodigo.Text == "" || txtTarjeta.Text == ""
-                       || txtNomap.Text == "" || txtDireccion.Text == "" || txtCorreo.Text == "" || txtContraseña.Text == "")
+                       || txtNomap.Text == "" || txtDireccion.Text == "" || txtCorreo.Text == "" || txtContraseña.Text == ""|| comboBox1.Text=="" || comboBox2.Text=="")
                     {
                         MessageBox.Show("Escriba en todos los campos", "Informacion de la cuenta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }

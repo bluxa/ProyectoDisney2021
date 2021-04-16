@@ -134,7 +134,7 @@ namespace ProyectoDisney2021.Presentacion.Categorias
             this.pictureSlider.Location = new System.Drawing.Point(83, 43);
             this.pictureSlider.Name = "pictureSlider";
             this.pictureSlider.Size = new System.Drawing.Size(1191, 423);
-            this.pictureSlider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureSlider.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureSlider.TabIndex = 26;
             this.pictureSlider.TabStop = false;
             // 
@@ -155,7 +155,7 @@ namespace ProyectoDisney2021.Presentacion.Categorias
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(964, 430);
+            this.ClientSize = new System.Drawing.Size(998, 464);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.btnBuscar);

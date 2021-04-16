@@ -67,7 +67,11 @@ namespace ProyectoDisney2021.Presentacion.InfoAdmin_Pelicula
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (cmbCategoriaP.Text == "Disney")
+            if (cmbCategoriaP.Text == "")
+            {
+                MessageBox.Show("Seleccione una categoria", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (cmbCategoriaP.Text == "Disney")
             {
                 tablaGeneral.Columns.Clear();
                 cagarTablaGeneral();
@@ -114,5 +118,115 @@ namespace ProyectoDisney2021.Presentacion.InfoAdmin_Pelicula
         {
 
         }
+        public void limpiarTxt()
+        {
+            txtId_Categoria.Clear();
+            txtId_Pelicula.Clear();
+            txtTitulo.Clear();
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (cmbCategoriaP.Text =="")
+            {
+                MessageBox.Show("Seleccione una categoria", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (cmbCategoriaP.Text == "Disney")
+            {
+                tablaGeneral.Columns.Clear();
+                agregarPeliculaTxt22(ref auxPeliculaTxt, cmbCategoriaP.Text, Convert.ToInt32(txtId_Pelicula.Text));
+                cagarTablaGeneral();
+                leerCategorias(cmbCategoriaP.Text);
+                limpiarTxt();
+            }
+            else if (cmbCategoriaP.Text == "Pixar")
+            {
+                tablaGeneral.Columns.Clear();
+                agregarPeliculaTxt22(ref auxPeliculaTxt, cmbCategoriaP.Text, Convert.ToInt32(txtId_Pelicula.Text));
+                cagarTablaGeneral();
+                leerCategorias(cmbCategoriaP.Text);
+                limpiarTxt();
+            }
+            if (cmbCategoriaP.Text == "Marvel")
+            {
+                tablaGeneral.Columns.Clear();
+                agregarPeliculaTxt22(ref auxPeliculaTxt, cmbCategoriaP.Text, Convert.ToInt32(txtId_Pelicula.Text));
+                cagarTablaGeneral();
+                leerCategorias(cmbCategoriaP.Text);
+                limpiarTxt();
+            }
+            if (cmbCategoriaP.Text == "Star Wars")
+            {
+                tablaGeneral.Columns.Clear();
+                agregarPeliculaTxt22(ref auxPeliculaTxt, cmbCategoriaP.Text, Convert.ToInt32(txtId_Pelicula.Text));
+                cagarTablaGeneral();
+                leerCategorias(cmbCategoriaP.Text);
+                limpiarTxt();
+            }
+            if (cmbCategoriaP.Text == "National Geographic")
+            {
+                tablaGeneral.Columns.Clear();
+                agregarPeliculaTxt22(ref auxPeliculaTxt, cmbCategoriaP.Text, Convert.ToInt32(txtId_Pelicula.Text));
+                cagarTablaGeneral();
+                leerCategorias(cmbCategoriaP.Text);
+                limpiarTxt();
+            }
+        }
+
+        public static void agregarPeliculaTxt22(ref ClsPelicula[] auxPeliculaTxt, string nomCategoria, int idPelicula)
+        {
+            StreamWriter writer = new StreamWriter(nomCategoria + ".txt");
+            writer.WriteLine(auxPeliculaTxt.Length - 1);
+            ClsPelicula temp = new ClsPelicula();
+            for (int index = 0; index < auxPeliculaTxt.Length; index++)
+            {
+                if (auxPeliculaTxt[index].idPelicula == idPelicula)
+                {
+                    if (index == auxPeliculaTxt.Length || index > auxPeliculaTxt.Length)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        index++;
+                        if (index < auxPeliculaTxt.Length)
+                        {
+                            writer.WriteLine(auxPeliculaTxt[index].idPelicula);
+                            writer.WriteLine(auxPeliculaTxt[index].nombrePelicula);
+                            writer.WriteLine(auxPeliculaTxt[index].idCategoria);
+                            writer.WriteLine(auxPeliculaTxt[index].imgPelicula);
+                            writer.WriteLine(auxPeliculaTxt[index].trailerPelicula);
+                        }
+                        else
+                            break;
+                            
+                    }
+                    
+                }
+                else
+                {
+                    writer.WriteLine(auxPeliculaTxt[index].idPelicula);
+                    writer.WriteLine(auxPeliculaTxt[index].nombrePelicula);
+                    writer.WriteLine(auxPeliculaTxt[index].idCategoria);
+                    writer.WriteLine(auxPeliculaTxt[index].imgPelicula);
+                    writer.WriteLine(auxPeliculaTxt[index].trailerPelicula);
+                }
+                
+            }
+
+            //temp.idPelicula = idPelicula;
+            //temp.nombrePelicula = nomPelicula;
+            //temp.idCategoria = catPelicula;
+            //temp.imgPelicula = imgPelicula;
+            //temp.trailerPelicula = trailerPelicula;
+
+            //writer.WriteLine(temp.idPelicula);
+            //writer.WriteLine(temp.nombrePelicula);
+            //writer.WriteLine(temp.idCategoria);
+            //writer.WriteLine(temp.imgPelicula);
+            //writer.WriteLine(temp.trailerPelicula);
+
+            writer.Close();
+        }
+
     }
 }

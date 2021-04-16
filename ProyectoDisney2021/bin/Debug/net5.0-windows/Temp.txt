@@ -1,5 +1,5 @@
-sajanel
-sergio
-minas@gmail.com
+byron
+byron
+byron2@correo.com
 https://whatsondisneyplus.com/wp-content/uploads/2021/02/vision-avatar.png
-1,1;2,1;2,2;1,4;1,2;
+1,0;2,0;1,1;1,3;

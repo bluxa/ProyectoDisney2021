@@ -33,6 +33,7 @@ namespace ProyectoDisney2021.Presentacion.Categorias
 
         private void CatMarvel_Load(object sender, EventArgs e)
         {
+            pictureBox7.Parent = pictureSlider;
             cargarPeliculasTxt(ref auxPeliculaTxt, "Marvel");
 
             pictureBox1.WaitOnLoad = false;

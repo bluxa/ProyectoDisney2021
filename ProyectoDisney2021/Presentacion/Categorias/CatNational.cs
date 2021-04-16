@@ -46,6 +46,7 @@ namespace ProyectoDisney2021.Presentacion.Categorias
 
         private void CatNational_Load(object sender, EventArgs e)
         {
+            pictureBox7.Parent = pictureSlider;
             cargarPeliculasTxt(ref auxPeliculaTxt, "National Geographic");
 
             pictureBox1.WaitOnLoad = false;
