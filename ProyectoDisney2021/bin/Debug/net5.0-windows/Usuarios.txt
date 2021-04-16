@@ -7,7 +7,7 @@ minas@gmail.com
 123
 lote 13 manzana
 https://whatsondisneyplus.com/wp-content/uploads/2021/02/vision-avatar.png
-1,1;2,1;2,2;1,4;
+1,1;2,1;2,2;1,4;1,2;
 byron
 byron
 byron2@correo.com
