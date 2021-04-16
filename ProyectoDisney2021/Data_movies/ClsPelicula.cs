@@ -77,7 +77,8 @@ namespace ProyectoDisney2021.Data_movies
 
         public override string ToString()
         {
-            return nombrePelicula +" Si funciona"+imgPelicula;
+            return nombrePelicula +" "+imgPelicula+" "+trailerPelicula;
         }
+        
     }
 }

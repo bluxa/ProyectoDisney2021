@@ -34,15 +34,15 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
                 objUsuario[index].codigoTarUsuario = reader.ReadLine();
                 objUsuario[index].direccionUsuario = reader.ReadLine();
                 objUsuario[index].avarUsuario = reader.ReadLine();
-
-
+                //PARA AGREGAR A MI LISTA
+                objUsuario[index].idPeliculas = reader.ReadLine();
             }
             reader.Close();
         }
 
         //Metodo para agregar un usuario
         public void AgregarUsuario(ref Cls_User[] objUsuario, string usuarioUser, string nombreUsuario, string correoUsuario,
-            string contraseñaUsuario, string tarjetaUsuario, string codigoTarUsuario, string direccionUsuario,string avarUsuario)
+            string contraseñaUsuario, string tarjetaUsuario, string codigoTarUsuario, string direccionUsuario, string avarUsuario)
         {
             StreamWriter writer = new StreamWriter("Usuarios.txt");
 
@@ -62,7 +62,8 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
                 writer.WriteLine(objUsuario[index].codigoTarUsuario);
                 writer.WriteLine(objUsuario[index].direccionUsuario);
                 writer.WriteLine(objUsuario[index].avarUsuario);
-
+                //PARA AGREGAR A MI LISTA
+                writer.WriteLine(objUsuario[index].idPeliculas);
             }
 
             temp.usuarioUser = usuarioUser;
@@ -73,16 +74,17 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
             temp.codigoTarUsuario = codigoTarUsuario;
             temp.direccionUsuario = direccionUsuario;
             temp.avarUsuario = avarUsuario;
-         
+            temp.idPeliculas = "";
+
             writer.WriteLine(temp.usuarioUser);
             writer.WriteLine(temp.nombreUsuario);
             writer.WriteLine(temp.correoUsuario);
             writer.WriteLine(temp.contraseñaUsuario);
             writer.WriteLine(temp.tarjetaUsuario);
-            writer.WriteLine(temp.codigoTarUsuario );
+            writer.WriteLine(temp.codigoTarUsuario);
             writer.WriteLine(temp.direccionUsuario);
             writer.WriteLine(temp.avarUsuario);
-
+            writer.WriteLine(temp.idPeliculas);
 
 
             writer.Close();

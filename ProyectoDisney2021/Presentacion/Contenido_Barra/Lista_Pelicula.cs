@@ -38,5 +38,37 @@ namespace ProyectoDisney2021.Presentacion.Contenido_Barra
             originales_Peliculas.Show();
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void abrirFormEnPanel(object formhija)
+
+        {
+            if (this.contenidoFom.Controls.Count > 0)
+
+                this.contenidoFom.Controls.RemoveAt(0);
+
+            Form fh = formhija as Form;
+
+            fh.TopLevel = false;
+
+            fh.Dock = DockStyle.Fill;
+
+            this.contenidoFom.Controls.Add(fh);
+
+            this.contenidoFom.Tag = fh;
+
+            fh.Show();
+
+
+
+        }
+
+        private void Lista_Pelicula_Load(object sender, EventArgs e)
+        {
+            abrirFormEnPanel(new Contenido_Pelicula.AxiliarPelicula());
+        }
     }
 }

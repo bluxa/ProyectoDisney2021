@@ -22,7 +22,7 @@ namespace ProyectoDisney2021.Presentacion
 
         public Cls_ListaDoble miLista = new Cls_ListaDoble();
         Cls_NodoDoble nodoList;
-        string usUser, nomUser, corrUser, avaUser;
+        string usUser, nomUser, corrUser, avaUser, idPelicula;
 
         public PresentacionContenido()
         {
@@ -192,12 +192,19 @@ namespace ProyectoDisney2021.Presentacion
             string nuevo = nodoList.datoNodo.ToString();
             string[] palabras = nuevo.Split("&");
 
+            int a = 0;
+
             TextWriter escribirDato = new StreamWriter("Temp.txt");
 
             foreach (string words in palabras)
             {
-                escribirDato.WriteLine(words);
-
+                a++;
+                if (a == 5)
+                {
+                    escribirDato.Write(words);
+                }
+                else
+                    escribirDato.WriteLine(words);
             }
             escribirDato.Close();
         }
@@ -210,10 +217,11 @@ namespace ProyectoDisney2021.Presentacion
             nomUser = leer.ReadLine();
             corrUser = leer.ReadLine();
             avaUser = leer.ReadLine();
+            idPelicula = leer.ReadLine();
             leer.Close();
         }
 
-        public void cargaAvatar() 
+        public void cargaAvatar()
         {
             panel1.Visible = false;
             pictureBox2.WaitOnLoad = false;
@@ -225,7 +233,10 @@ namespace ProyectoDisney2021.Presentacion
             label4.Text = usUser;
             label5.Text = nomUser;
             label6.Text = corrUser;
+
         }
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -293,6 +304,7 @@ namespace ProyectoDisney2021.Presentacion
         {
             this.Hide();
             Lista_Pelicula listaPelicula = new Lista_Pelicula();
+            //Contenido_Pelicula.AxiliarPelicula listaPelicula = new Contenido_Pelicula.AxiliarPelicula();
             listaPelicula.Show();
         }
 

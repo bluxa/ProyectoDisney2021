@@ -85,5 +85,10 @@ namespace ProyectoDisney2021.Presentacion
         {
             abrirFormEnPanel(new Info_National());
         }
+
+        private void barraTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

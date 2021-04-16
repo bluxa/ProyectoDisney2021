@@ -19,10 +19,11 @@ namespace ProyectoDisney2021
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new ProyectoDisney2021.Presentacion.Categorias.CatDisney());
-            Application.Run(new ProyectoDisney2021.Presentacion.PresentacionContenido());
-          // Application.Run(new Login());
+            //  Application.Run(new ProyectoDisney2021.Presentacion.PresentacionContenido());
+            Application.Run(new Login());
+            //Application.Run(new ProyectoDisney2021.Presentacion.Contenido_Pelicula.AxiliarPelicula());
             //Application.Run(new Presentacion.Categorias.CatDisney());
-            
+
             //Application.Run(new Administrado_Principal());
 
         }

@@ -35,6 +35,8 @@ namespace VistaPelicula
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbNombre = new System.Windows.Forms.TextBox();
+            this.lbIdPelicula = new System.Windows.Forms.Label();
+            this.lbIdCategoria = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +71,7 @@ namespace VistaPelicula
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label1
             // 
@@ -93,6 +96,33 @@ namespace VistaPelicula
             this.lbNombre.Name = "lbNombre";
             this.lbNombre.Size = new System.Drawing.Size(693, 171);
             this.lbNombre.TabIndex = 5;
+            this.lbNombre.TextChanged += new System.EventHandler(this.lbNombre_TextChanged);
+            // 
+            // lbIdPelicula
+            // 
+            this.lbIdPelicula.AutoSize = true;
+            this.lbIdPelicula.BackColor = System.Drawing.Color.Transparent;
+            this.lbIdPelicula.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIdPelicula.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lbIdPelicula.Location = new System.Drawing.Point(81, 440);
+            this.lbIdPelicula.Name = "lbIdPelicula";
+            this.lbIdPelicula.Size = new System.Drawing.Size(70, 20);
+            this.lbIdPelicula.TabIndex = 6;
+            this.lbIdPelicula.Text = "IdPelicula";
+            this.lbIdPelicula.Visible = false;
+            // 
+            // lbIdCategoria
+            // 
+            this.lbIdCategoria.AutoSize = true;
+            this.lbIdCategoria.BackColor = System.Drawing.Color.Transparent;
+            this.lbIdCategoria.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIdCategoria.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lbIdCategoria.Location = new System.Drawing.Point(81, 460);
+            this.lbIdCategoria.Name = "lbIdCategoria";
+            this.lbIdCategoria.Size = new System.Drawing.Size(83, 20);
+            this.lbIdCategoria.TabIndex = 7;
+            this.lbIdCategoria.Text = "Id Categoria";
+            this.lbIdCategoria.Visible = false;
             // 
             // Form1
             // 
@@ -101,6 +131,8 @@ namespace VistaPelicula
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(804, 721);
+            this.Controls.Add(this.lbIdCategoria);
+            this.Controls.Add(this.lbIdPelicula);
             this.Controls.Add(this.lbNombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
@@ -124,6 +156,8 @@ namespace VistaPelicula
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.WebBrowser webBrowser1;
         public System.Windows.Forms.TextBox lbNombre;
+        public System.Windows.Forms.Label lbIdPelicula;
+        public System.Windows.Forms.Label lbIdCategoria;
     }
 }
 

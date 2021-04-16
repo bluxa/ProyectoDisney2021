@@ -90,7 +90,7 @@ namespace ProyectoDisney2021.Presentacion
             {
                 miUsuario = new Cls_User(auxTexto[index].usuarioUser, auxTexto[index].nombreUsuario
                     , auxTexto[index].correoUsuario, auxTexto[index].contraseñaUsuario, auxTexto[index].tarjetaUsuario
-                    , auxTexto[index].codigoTarUsuario, auxTexto[index].direccionUsuario, auxTexto[index].avarUsuario);
+                    , auxTexto[index].codigoTarUsuario, auxTexto[index].direccionUsuario, auxTexto[index].avarUsuario, auxTexto[index].idPeliculas);
 
                 //Se la informacion leida de un txt se inserta denuevo a otra lista
                 datoUsuario.insertarDatoUsuario(miUsuario);

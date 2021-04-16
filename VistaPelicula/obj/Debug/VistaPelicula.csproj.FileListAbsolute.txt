@@ -17,3 +17,4 @@ C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\obj\Debug\VistaP
 C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\obj\Debug\VistaPelicula.csproj.CoreCompileInputs.cache
 C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\obj\Debug\VistaPelicula.exe
 C:\Users\PC\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\obj\Debug\VistaPelicula.pdb
+C:\Users\Admin\Source\Repos\bluxa\ProyectoDisney2021\VistaPelicula\obj\Debug\VistaPelicula.csprojAssemblyReference.cache

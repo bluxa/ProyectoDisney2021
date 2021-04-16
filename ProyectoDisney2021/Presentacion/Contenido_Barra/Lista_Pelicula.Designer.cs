@@ -38,7 +38,7 @@ namespace ProyectoDisney2021.Presentacion.Contenido_Barra
             this.btnBusqueda = new System.Windows.Forms.Button();
             this.btnInicio = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.contenidoFom = new System.Windows.Forms.Panel();
             this.barraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -192,14 +192,15 @@ namespace ProyectoDisney2021.Presentacion.Contenido_Barra
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
-            // panel1
+            // contenidoFom
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(12)))), ((int)(((byte)(17)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 93);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1149, 357);
-            this.panel1.TabIndex = 2;
+            this.contenidoFom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(12)))), ((int)(((byte)(17)))));
+            this.contenidoFom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contenidoFom.Location = new System.Drawing.Point(0, 93);
+            this.contenidoFom.Name = "contenidoFom";
+            this.contenidoFom.Size = new System.Drawing.Size(1149, 357);
+            this.contenidoFom.TabIndex = 2;
+            this.contenidoFom.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Lista_Pelicula
             // 
@@ -207,11 +208,12 @@ namespace ProyectoDisney2021.Presentacion.Contenido_Barra
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1149, 450);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.contenidoFom);
             this.Controls.Add(this.barraTitulo);
             this.Name = "Lista_Pelicula";
             this.Text = "Lista_Pelicula";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Lista_Pelicula_Load);
             this.barraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -228,6 +230,6 @@ namespace ProyectoDisney2021.Presentacion.Contenido_Barra
         private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnSeries;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel contenidoFom;
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProyectoDisney2021.Data_movies;
+using ProyectoDisney2021.Estrutura_datos.Pila;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,14 +20,21 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
         public string codigoTarUsuario { get; set; }
         public string direccionUsuario { get; set; }
         public string avarUsuario{ get; set; }
+        public string idPeliculas { get; set; }
+
+        public ClsPila miLista;
 
         //Constructor vacio
-        public Cls_User() { }
+        public Cls_User() 
+        {
+            miLista = new ClsPila();
+        }
 
 
         //Contructor General
         public Cls_User(string usuarioUser, string nombreUsuario, string correoUsuario,
-            string contraseñaUsuario, string tarjetaUsuario, string codigoTarUsuario, string direccionUsuario,string avarUsuario
+            string contraseñaUsuario, string tarjetaUsuario, string codigoTarUsuario, 
+            string direccionUsuario,string avarUsuario, string idPeliculas
             )
         {
             this.usuarioUser = usuarioUser;
@@ -36,7 +45,7 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
             this.codigoTarUsuario = codigoTarUsuario;
             this.direccionUsuario = direccionUsuario;
             this.avarUsuario = avarUsuario;
-
+            this.idPeliculas = idPeliculas;
         }
 
         public Cls_User(string contraseñaUser,string correoUser) {
@@ -45,7 +54,17 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
             this.correoUsuario = correoUser;
 
         }
-       
+
+        public void addMiListaPila(ClsPelicula miPelicula)
+        {
+            miLista.Push(miPelicula);
+        }
+
+        public void MostrarMiListaPila()
+        {
+            miLista.Mostrar();
+        }
+
         //Compara que la contraseña introducida se igual a la introducida
         public bool contraseñaIgual(object q)
         {
@@ -83,7 +102,7 @@ namespace ProyectoDisney2021.Estrutura_datos.Usuario
 
         public override string ToString()
         {
-            return "" + usuarioUser + "" + "&" + nombreUsuario + "&" + correoUsuario + "&" + avarUsuario;
+            return "" + usuarioUser + "" + "&" + nombreUsuario + "&" + correoUsuario + "&" + avarUsuario + "&" + idPeliculas;
         }
 
 

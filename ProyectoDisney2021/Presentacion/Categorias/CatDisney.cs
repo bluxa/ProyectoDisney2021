@@ -125,6 +125,8 @@ namespace ProyectoDisney2021.Presentacion.Categorias
                 Form1 Formulario = new Form1();
                 Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[0].trailerPelicula);
                 Formulario.lbNombre.Text = auxPeliculaTxt[0].nombrePelicula.ToString();
+                Formulario.lbIdPelicula.Text = auxPeliculaTxt[0].idPelicula.ToString();
+                Formulario.lbIdCategoria.Text = auxPeliculaTxt[0].idCategoria.ToString();
                 Formulario.Show();
             }
         }
@@ -141,6 +143,8 @@ namespace ProyectoDisney2021.Presentacion.Categorias
                 Form1 Formulario = new Form1();
                 Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[1].trailerPelicula);
                 Formulario.lbNombre.Text = auxPeliculaTxt[1].nombrePelicula.ToString();
+                Formulario.lbIdPelicula.Text = auxPeliculaTxt[1].idPelicula.ToString();
+                Formulario.lbIdCategoria.Text = auxPeliculaTxt[1].idCategoria.ToString();
                 Formulario.Show();
             }
             
@@ -158,6 +162,8 @@ namespace ProyectoDisney2021.Presentacion.Categorias
                 Form1 Formulario = new Form1();
                 Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[2].trailerPelicula);
                 Formulario.lbNombre.Text = auxPeliculaTxt[2].nombrePelicula.ToString();
+                Formulario.lbIdPelicula.Text = auxPeliculaTxt[2].idPelicula.ToString();
+                Formulario.lbIdCategoria.Text = auxPeliculaTxt[2].idCategoria.ToString();
                 Formulario.Show();
             }
         }
@@ -174,6 +180,8 @@ namespace ProyectoDisney2021.Presentacion.Categorias
                 Form1 Formulario = new Form1();
                 Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[3].trailerPelicula);
                 Formulario.lbNombre.Text = auxPeliculaTxt[3].nombrePelicula.ToString();
+                Formulario.lbIdPelicula.Text = auxPeliculaTxt[3].idPelicula.ToString();
+                Formulario.lbIdCategoria.Text = auxPeliculaTxt[3].idCategoria.ToString();
                 Formulario.Show();
             }
         }
@@ -190,6 +198,8 @@ namespace ProyectoDisney2021.Presentacion.Categorias
                 Form1 Formulario = new Form1();
                 Formulario.webBrowser1.DocumentText = string.Format(html, auxPeliculaTxt[4].trailerPelicula);
                 Formulario.lbNombre.Text = auxPeliculaTxt[4].nombrePelicula.ToString();
+                Formulario.lbIdPelicula.Text = auxPeliculaTxt[4].idPelicula.ToString();
+                Formulario.lbIdCategoria.Text = auxPeliculaTxt[4].idCategoria.ToString();
                 Formulario.Show();
             }
         }
